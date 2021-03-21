@@ -6,6 +6,8 @@
 @import "common/helpers";
 @import "common/global";
 @import "common/wp";
+@import "common/flex";
+
 
 // Components
 @import "components/columns";
@@ -17,3 +19,4 @@
 @import "components/posts";
 @import "components/sidebar";
 @import "components/widgets";
+@import "components/page-home";

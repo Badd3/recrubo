@@ -16,20 +16,18 @@
 
     <header class="site-header">
         <div class="container">
-            <div class="site-header_wrapper">
-                <div class="menu-wrapper">
-                    <nav class="primary-navigation">
-                        <?php wp_nav_menu(array('theme_location' => 'primary')); ?>
-                    </nav>
-                </div>
+            <div class="site-header_wrapper d-flex space-between row-wrap">
+                <nav class="primary-navigation">
+                    <?php wp_nav_menu(array('theme_location' => 'primary')); ?>
+                </nav>
                 <div class="site-logo">
-
+                    i
                 </div>
-                <div class="header-cta">
+                <div class="header-cta d-flex row-wrap">
                     <div class="telnr">
                         <a href="tel:+31612345678">+31612345678</a>
                     </div>
-                    <span>Contact</span>
+                        <a href="/contact" class="contact">Contact</a>
                 </div>
             </div>
         </div>

@@ -1,0 +1,23 @@
+.d-flex{
+  display: flex;
+}
+
+.space-between{
+  justify-content: space-between;
+}
+
+.row-wrap {
+  flex-flow: row wrap;
+}
+
+.row-nowrap {
+  flex-flow: row nowrap;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex-50 {
+  flex: 50%;
+}

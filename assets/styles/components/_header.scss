@@ -1,11 +1,23 @@
 .site-header {
-  margin-top: 0.5rem;
-  margin-bottom: 2rem;
   text-align: center;
-
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  top: 0;
+  padding: 30px 0;
+  transition: 1s;
   @include breakpoint(md) {
     text-align: left;
   }
+  a {
+    font-size: 16px;
+  }
+}
+
+.site-header.shadow {
+  -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
 }
 
 .site-title {
@@ -29,6 +41,48 @@
   ul li {
     display: inline-block;
     margin-right: 1rem;
-    font-size: $h6;
+    font-size: 16px;
+    a {
+      color: #1c1c1c;
+      text-decoration: none;
+      font-family: 'Open Sans';
+      font-weight: 600;
+    }
+
+    &.current-menu-item a {
+      color: $color-blue;
+      border-bottom: 2px solid;
+      padding-bottom: 25px;
+    }
   }
+}
+
+.site-header_wrapper{
+  width: 100%;
+  position: relative;
+}
+
+.site-logo {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.header-cta{
+  align-items: baseline;
+  .telnr {
+    margin-right: 30px;
+  }
+  a {
+    color: $color-text;
+    font-weight: 600;
+  }
+
+  .contact {
+    background-color: $color-light-blue;
+    padding: 5px 20px;
+    border-radius: 20px;
+  }
+
+
 }
