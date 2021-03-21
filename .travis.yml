@@ -1,0 +1,30 @@
+language: php
+sudo: false
+dist: trusty
+php:
+  - 7.1
+  - 7.2
+
+env:
+  - TRAVIS_NODE_VERSION="6"
+  - TRAVIS_NODE_VERSION="8"
+
+matrix:
+  fast_finish: true
+
+cache:
+  apt: true
+  directories:
+    - $HOME/.npm
+
+before_install:
+  - source ~/.nvm/nvm.sh && nvm install $TRAVIS_NODE_VERSION && nvm use $TRAVIS_NODE_VERSION
+
+install:
+  - node -v
+  - travis_retry npm install
+
+script:
+  - npm run clean
+  - npm run dev
+  - npm run prod

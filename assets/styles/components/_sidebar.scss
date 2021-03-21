@@ -1,0 +1,33 @@
+/**
+ * Show sidebar on the following page types only
+ */
+.blog,
+.single,
+.archive,
+.search,
+.author {
+  .site-content .container {
+    display: flex;
+    flex-flow: column nowrap;
+
+    @include breakpoint(md) {
+      flex-flow: row nowrap;
+    }
+  }
+
+  .main {
+    @include breakpoint(md) {
+      flex-basis: 75%;
+    }
+  }
+
+  .sidebar {
+    display: none;
+
+    @include breakpoint(md) {
+      flex-basis: 25%;
+      display: block;
+      padding-left: 2rem;
+    }
+  }
+}

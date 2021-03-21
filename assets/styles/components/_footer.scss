@@ -1,0 +1,26 @@
+.site-footer {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+
+  @include breakpoint(md) {
+    text-align: left;
+  }
+}
+
+.footer-widgets {
+  display: flex;
+  flex-flow: column nowrap;
+
+  @include breakpoint(md) {
+    flex-flow: row nowrap;
+  }
+
+  .widget {
+    flex-basis: 100%;
+  }
+
+  .widget h3 {
+    margin-top: 0;
+  }
+}

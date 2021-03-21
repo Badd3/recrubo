@@ -1,0 +1,36 @@
+// Colors
+$color-body: #fff;
+$color-text: #1c1c1c;
+$color-heading: #1c1c1c;
+$color-blue: #00b8fd;
+$color-green: #66dc3d;
+$color-orange: #fd5a00;
+$color-magenta: #fd0066;
+$color-light-blue: #d0edf9;
+
+
+
+
+// Typography
+$font-size-base: 1rem;
+$font-weight-base: normal;
+$font-weight-heading: bold;
+$line-height-base: 1.6;
+$line-height-heading: 1.25;
+$link-decoration: none;
+
+// Headings
+$h1: 2.5rem; // 40px
+$h2: 50px; // 32px
+$h3: 1.75rem; // 28px
+$h4: 1.5rem; // 24px
+$h5: 1.25rem; // 20px
+$h6: 1.15rem; // 18px
+
+// Breakpoints
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
