@@ -2,11 +2,20 @@
 $color-body: #fff;
 $color-text: #1c1c1c;
 $color-heading: #1c1c1c;
-$color-blue: #00b8fd;
 $color-green: #66dc3d;
 $color-orange: #fd5a00;
 $color-magenta: #fd0066;
-$color-light-blue: #d0edf9;
+$color-light-blue: #E5F8FF;
+$color-blue: #00b8fd;
+
+$color-light-green: #EAF8E5;
+$color-green: #deeed9;
+
+$color-light-orange: #ffeee5;
+$color-orange: #fd5a00;
+
+$color-pink: #fd0066;
+$color-light-pink: #ffe5ef;
 
 
 
@@ -22,7 +31,7 @@ $link-decoration: none;
 // Headings
 $h1: 50px; // 40px
 $h2: 50px; // 32px
-$h3: 1.75rem; // 28px
+$h3: 20px;
 $h4: 1.5rem; // 24px
 $h5: 1.25rem; // 20px
 $h6: 1.15rem; // 18px
