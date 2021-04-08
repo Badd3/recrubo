@@ -1,21 +1,12 @@
 .hero {
-  min-height: 70vh;
-
-    .hero-left {
-      background-color: $color-light-blue;
-      padding: 50px 20px;
-
-      @include breakpoint(lg){
-      flex: 0 0 80%;
-      padding: 50px 50px 50px;
-      }
-      @include breakpoint(lg){
-      padding: 100px 100px 100px;
-      }
-    }
+  min-height: 600px;
+  @include breakpoint(md){
+    min-height: 890px;
+  }
   .hero-left p {
     margin-bottom: 50px;
     max-width: 500px;
+
   }
   .hero-left h1 {
     max-width: 566px;
@@ -28,7 +19,7 @@
 
 .onze-diensten {
   justify-content: space-between;
-
+  margin-bottom: 100px;
   >h2 {
     text-align: center;
   }
@@ -119,4 +110,46 @@
     margin-bottom: 30px;
     transition: .3s;
   }
+}
+
+.recrubo-block {
+
+  // @include breakpoint(md){
+  //   min-height: 890px;
+  // }
+  margin-bottom: 100px;
+  .recrubo-block__inner {
+
+    padding: 50px 20px;
+    border-radius: 20px;
+
+    @include breakpoint(lg){
+    flex: 0 0 70%;
+    padding: 50px 50px 50px;
+    }
+    @include breakpoint(lg){
+    padding: 100px 100px 100px;
+    }
+
+    p{
+      max-width: 620px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.bg-light-blue {
+  background-color: $color-light-blue;
+}
+
+.bg-light-green {
+  background-color: $color-light-green;
+}
+
+.bg-light-orange {
+  background-color: $color-light-orange;
+
+}
+.bg-light-pink {
+  background-color: $color-light-pink;
 }

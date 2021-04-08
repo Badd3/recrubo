@@ -17,7 +17,9 @@
 .align-center {
   align-items: center;
 }
-
+.flex-end {
+  justify-content: flex-end;
+}
 .flex-10 {
   flex: 10%;
 }

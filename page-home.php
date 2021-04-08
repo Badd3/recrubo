@@ -1,6 +1,6 @@
 <?php get_header(); ?>
-<section class="hero align-center d-flex">
-    <div class="hero-left">
+<section class="hero align-center d-flex recrubo-block">
+    <div class="hero-left recrubo-block__inner bg-light-blue">
         <h1>Wij ontzorgen uw HR personeel</h1>
         <p>Wij van Recrubo helpen u graag bij het ontzorgen van uw HR personeel, zodat ze meer tijd overhouden!</p>
         <div class="hero-cta">
@@ -50,6 +50,38 @@
             </a>
         </div>
     </div>
-
 </section>
+
+<section class="recrubo-block chatbot d-flex row-nowrap align-center">
+    <div class="recrubo-block__inner bg-light-blue">
+        <h2>Chatbots voor HR en Recruitment</h2>
+        <p>HR-chatbots inzetten om algemene vragen van personeel te beantwoorden en hiermee in hun informatiebehoefte te voorzien. Vragen met betrekking tot het rooster, de werktijden, het CAO, inloggegevens etc. komen nog altijd op het bord van de verkeerde personen terecht. </p>
+        <a class="button bg-white shadow blue" href="/contact">Ontdek meer</a>
+    </div>
+</section>
+
+<section class="recrubo-block automatisering d-flex row-nowrap align-center flex-end">
+    <div class="recrubo-block__inner bg-light-green">
+        <h2>Automatisering</h2>
+        <p>HR-chatbots inzetten om algemene vragen van personeel te beantwoorden en hiermee in hun informatiebehoefte te voorzien. Vragen met betrekking tot het rooster, de werktijden, het CAO, inloggegevens etc. komen nog altijd op het bord van de verkeerde personen terecht. </p>
+        <a class="button bg-white shadow green" href="/contact">Ontdek meer</a>
+    </div>
+</section>
+
+<section class="recrubo-block platformen d-flex row-nowrap align-center">
+    <div class="recrubo-block__inner bg-light-orange">
+        <h2>Platformen</h2>
+        <p>HR-chatbots inzetten om algemene vragen van personeel te beantwoorden en hiermee in hun informatiebehoefte te voorzien. Vragen met betrekking tot het rooster, de werktijden, het CAO, inloggegevens etc. komen nog altijd op het bord van de verkeerde personen terecht. </p>
+        <a class="button bg-white shadow orange" href="/contact">Ontdek meer</a>
+    </div>
+</section>
+
+<section class="recrubo-block marketing d-flex row-nowrap align-center flex-end">
+    <div class="recrubo-block__inner bg-light-pink">
+        <h2>Marketing</h2>
+        <p>HR-chatbots inzetten om algemene vragen van personeel te beantwoorden en hiermee in hun informatiebehoefte te voorzien. Vragen met betrekking tot het rooster, de werktijden, het CAO, inloggegevens etc. komen nog altijd op het bord van de verkeerde personen terecht. </p>
+        <a class="button bg-white shadow pink" href="/contact">Ontdek meer</a>
+    </div>
+</section>
+
 <?php get_footer(); ?>

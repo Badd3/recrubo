@@ -23,7 +23,10 @@ h1 {
 }
 
 h2 {
-  font-size: $h2;
+  font-size: 34px;
+  @include breakpoint(md){
+    font-size: $h2;
+  }
 }
 
 h3 {
@@ -54,6 +57,7 @@ h6 {
   color: $color-heading;
   // font-weight: bold;
   font-family: 'Poppins';
+  margin-top: 0;
   margin-bottom: 30px;
 }
 
@@ -109,6 +113,13 @@ img {
 .green {
   color: $color-green;
 }
+.orange {
+  color: $color-orange;
+}
+
+.pink {
+  color: $color-pink;
+}
 
 .button {
   font-weight: 100;
@@ -116,6 +127,13 @@ img {
   border-radius: 20px;
   padding: 15px 30px 15px 30px;
   display: inline-block;
+  &:after {
+    content: url(/wp-content/themes/recrubo/dist/images/right.svg);
+    padding: 0px 8px;
+    border-radius: 50px;
+    line-height: 5px;
+    margin-left: 10px;
+  }
   &.bg-white {
     background-color: white;
   }
@@ -123,19 +141,21 @@ img {
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.15);
   }
   &.blue:after {
-    content: url(/wp-content/themes/recrubo/dist/images/right.svg);
     background-color: $color-blue;
-    padding: 0px 8px;
-    border-radius: 50px;
-    line-height: 5px;
-    margin-left: 10px;
   }
+  &.green:after {
+    background-color: $color-green;
+  }
+  &.orange:after {
+    background-color: $color-orange;
+  }
+  &.pink:after {
+    background-color: $color-pink;
+  }
+
+
   &.black:after {
     content: url(/wp-content/themes/recrubo/dist/images/right-black.svg);
     background-color: rgba(0, 0, 0, 0.1);
-    padding: 0px 8px;
-    border-radius: 50px;
-    line-height: 5px;
-    margin-left: 10px;
   }
 }
