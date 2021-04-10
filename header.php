@@ -34,4 +34,3 @@
     </header>
 
     <section class="site-content">
-        <div class="container">

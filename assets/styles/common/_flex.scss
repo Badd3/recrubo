@@ -2,9 +2,22 @@
   display: flex;
 }
 
+.d-flex--column {
+  flex-flow: column;
+}
+
 .space-between{
   justify-content: space-between;
 }
+
+.justify-center {
+  justify-content: center;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
 
 .row-wrap {
   flex-flow: row wrap;
@@ -17,9 +30,7 @@
 .align-center {
   align-items: center;
 }
-.flex-end {
-  justify-content: flex-end;
-}
+
 .flex-10 {
   flex: 10%;
 }

@@ -138,18 +138,61 @@
   }
 }
 
-.bg-light-blue {
-  background-color: $color-light-blue;
-}
+.testimonials {
+  text-align: center;
+  // padding: 0 30px;
+  .recrubo-slider {
+    padding-left: calc(50vw - 650px);
+  }
 
-.bg-light-green {
-  background-color: $color-light-green;
-}
+  .swiper-container {
+    width:100%;
+    padding: 30px;
+  }
 
-.bg-light-orange {
-  background-color: $color-light-orange;
+  .testimonial-wrapper {
+    padding: 30px;
+    box-shadow: 0 0 20px 1px rgba(103, 105, 116, 0.2);
+    border-radius: 20px 20px 20px 0;
+    min-height: 233px;
+    // max-height: 233px;
+    .personal-info {
+      margin-bottom: 15px;
+      .image {
+        margin-right: 15px;
+      }
+      .info{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        text-align: left;
 
-}
-.bg-light-pink {
-  background-color: $color-light-pink;
+
+        h4{
+          margin-bottom: 0;
+          font-size: 16px;
+          font-weight: 600;
+        }
+        span {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .content {
+    text-align: left;
+      span{
+      font-size: 14px;
+
+      }
+    }
+
+    //Pagination
+    .swiper-pagination-bullet{
+      border-radius: 2.5px;
+      width: 20px;
+      height: 5px;
+    }
+
 }
