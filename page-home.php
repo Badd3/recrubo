@@ -6,8 +6,8 @@
             <h1><?php the_field('hero_titel'); ?></h1>
             <p><?php the_field('hero_subtekst'); ?></p>
             <div class="hero-cta">
-                <a class="button bg-white shadow blue" href="/contact"><?php the_field('hero_button_links'); ?></a>
-                <a class="button black" href=""><?php the_field('hero_button_rechts'); ?></a>
+                <a class="button bg-white shadow blue" href="<?php the_field('hero_button_rechts_url'); ?>"><?php the_field('hero_button_links'); ?></a>
+                <a class="button black" href="<?php the_field('hero_button_rechts_url'); ?>"><?php the_field('hero_button_rechts'); ?></a>
             </div>
         </div>
     </section>
@@ -15,40 +15,52 @@
     <section class="onze-diensten d-flex row-wrap">
         <h2 class="flex-100 "> Onze Diensten</h2>
         <div class="column-wrap flex-100 d-flex row-wrap space-between">
+            <?php
+            $chatbots = get_field('chatbots');
+            ?>
             <div class="column chatbot">
                 <a href="">
                     <div class="icon">
                         <img src="<?php THEMEDIR; ?>/wp-content/themes/recrubo/dist/images/chat.svg" alt="" srcset="">
                     </div>
-                    <h3>Chatbot</h3>
-                    <span>We are happy to hear you had a positive experience! </span>
+                    <h3><?php echo $chatbots['dienst_kolom_1_titel']; ?></h3>
+                    <span><?php echo $chatbots['dienst_kolom_1_subtekst']; ?></span>
                 </a>
             </div>
+            <?php
+            $automatisering = get_field('automatisering');
+            ?>
             <div class="column automatisering">
                 <a href="">
                     <div class="icon">
                         <img src="<?php THEMEDIR; ?>/wp-content/themes/recrubo/dist/images/repeat.svg" alt="" srcset="">
                     </div>
-                    <h3>Automatisering</h3>
-                    <span>We are happy to hear you had a positive experience! </span>
+                    <h3><?php echo $automatisering['dienst_kolom_2_titel']; ?></h3>
+                    <span><?php echo $automatisering['dienst_kolom_2_subtekst']; ?></span>
                 </a>
             </div>
+            <?php
+                $plaformen = get_field('platformen')
+            ?>
             <div class="column platformen">
                 <a href="">
                     <div class="icon">
                         <img src="<?php THEMEDIR; ?>/wp-content/themes/recrubo/dist/images/layers.svg" alt="" srcset="">
                     </div>
-                    <h3>Platformen</h3>
-                    <span>We are happy to hear you had a positive experience!</span>
+                    <h3><?php echo $plaformen['dienst_kolom_3_titel']; ?></h3>
+                    <span><?php echo $plaformen['dienst_kolom_3_subtekst']; ?></span>
                 </a>
             </div>
+            <?php
+                $marketing = get_field('marketing')
+            ?>
             <div class="column marketing">
                 <a href="">
                     <div class="icon">
                         <img src="<?php THEMEDIR; ?>/wp-content/themes/recrubo/dist/images/fast.svg" alt="" srcset="">
                     </div>
-                    <h3>Marketing</h3>
-                    <span>We are happy to hear you had a positive experience! </span>
+                    <h3><?php echo $marketing['dienst_kolom_4_titel']; ?></h3>
+                    <span><?php echo $marketing['dienst_kolom_4_subtekst']; ?></span>
                 </a>
             </div>
         </div>
