@@ -68,33 +68,33 @@
 
     <section class="recrubo-block chatbot d-flex row-nowrap align-center">
         <div class="recrubo-block__inner bg-light-blue">
-            <h2>Chatbots voor HR en Recruitment</h2>
-            <p>HR-chatbots inzetten om algemene vragen van personeel te beantwoorden en hiermee in hun informatiebehoefte te voorzien. Vragen met betrekking tot het rooster, de werktijden, het CAO, inloggegevens etc. komen nog altijd op het bord van de verkeerde personen terecht. </p>
-            <a class="button bg-white shadow blue" href="/contact">Ontdek meer</a>
+            <h2><?php the_field('cta_chatbots_titel'); ?></h2>
+            <p><?php the_field('cta_chatbots_subtekst'); ?></p>
+            <a class="button bg-white shadow blue" href="<?php the_field('cta_chatbots_knop_url'); ?>"><?php the_field('cta_chatbots_knoptekst'); ?></a>
         </div>
     </section>
 
     <section class="recrubo-block automatisering d-flex row-nowrap align-center flex-end">
         <div class="recrubo-block__inner bg-light-green">
-            <h2>Automatisering</h2>
-            <p>HR-chatbots inzetten om algemene vragen van personeel te beantwoorden en hiermee in hun informatiebehoefte te voorzien. Vragen met betrekking tot het rooster, de werktijden, het CAO, inloggegevens etc. komen nog altijd op het bord van de verkeerde personen terecht. </p>
-            <a class="button bg-white shadow green" href="/contact">Ontdek meer</a>
+            <h2><?php the_field('cta_automatisering_titel'); ?></h2>
+            <p><?php the_field('cta_automatisering_subtekst'); ?></p>
+            <a class="button bg-white shadow green" href="<?php the_field('cta_chatbots_knop_url'); ?>"><?php the_field('cta_automatisering_knoptekst'); ?></a>
         </div>
     </section>
 
     <section class="recrubo-block platformen d-flex row-nowrap align-center">
         <div class="recrubo-block__inner bg-light-orange">
-            <h2>Platformen</h2>
-            <p>HR-chatbots inzetten om algemene vragen van personeel te beantwoorden en hiermee in hun informatiebehoefte te voorzien. Vragen met betrekking tot het rooster, de werktijden, het CAO, inloggegevens etc. komen nog altijd op het bord van de verkeerde personen terecht. </p>
-            <a class="button bg-white shadow orange" href="/contact">Ontdek meer</a>
+            <h2><?php the_field('cta_platformen_titel'); ?></h2>
+            <p><?php the_field('cta_platformen_subtekst'); ?></p>
+            <a class="button bg-white shadow orange" href="<?php the_field('cta_platformen_knop_url'); ?>"><?php the_field('cta_platformen_knoptekst'); ?></a>
         </div>
     </section>
 
     <section class="recrubo-block marketing d-flex row-nowrap align-center flex-end">
         <div class="recrubo-block__inner bg-light-pink">
-            <h2>Marketing</h2>
-            <p>HR-chatbots inzetten om algemene vragen van personeel te beantwoorden en hiermee in hun informatiebehoefte te voorzien. Vragen met betrekking tot het rooster, de werktijden, het CAO, inloggegevens etc. komen nog altijd op het bord van de verkeerde personen terecht. </p>
-            <a class="button bg-white shadow pink" href="/contact">Ontdek meer</a>
+            <h2><?php the_field('cta_marketing_titel'); ?></h2>
+            <p><?php the_field('cta_marketing_subtekst'); ?></p>
+            <a class="button bg-white shadow pink" href="<?php the_field('cta_marketing_knop_url'); ?>"><?php the_field('cta_marketing_knoptekst'); ?></a>
         </div>
     </section>
 </div> <!-- container -->
@@ -103,126 +103,71 @@
             <h2>Wat onze klanten zeggen</h2>
         </div>
         <div class="recrubo-slider">
-            <!-- Slider main container -->
-            <div class="swiper-container">
-            <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <div class="testimonial-wrapper">
-                            <div class="personal-info d-flex">
-                                <div class="image">
-                                    <img src="<?php THEMEDIR; ?>/wp-content/themes/recrubo/dist/images/testimonial.png" alt="" srcset="">
-                                </div>
-                                <div class="info">
-                                    <h4 class="name">Mila Price</h4>
-                                    <span class="title">HR bij Tele Performance</span>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <span>
-                                    “We are happy to hear you had a positive experience! We value your input and encourage you to let us know more details about your experience with us.”
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="testimonial-wrapper">
-                            <div class="personal-info d-flex">
-                                <div class="image">
-                                    <img src="<?php THEMEDIR; ?>/wp-content/themes/recrubo/dist/images/testimonial.png" alt="" srcset="">
-                                </div>
-                                <div class="info">
-                                    <h4 class="name">Mila Price</h4>
-                                    <span class="title">HR bij Tele Performance</span>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <span>
-                                    “We are happy to hear you had a positive experience! We value your input and encourage you to let us know more details about your experience with us.”
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="testimonial-wrapper">
-                            <div class="personal-info d-flex">
-                                <div class="image">
-                                    <img src="<?php THEMEDIR; ?>/wp-content/themes/recrubo/dist/images/testimonial.png" alt="" srcset="">
-                                </div>
-                                <div class="info">
-                                    <h4 class="name">Mila Price</h4>
-                                    <span class="title">HR bij Tele Performance</span>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <span>
-                                    “We are happy to hear you had a positive experience! We value your input and encourage you to let us know more details about your experience with us.”
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="testimonial-wrapper">
-                            <div class="personal-info d-flex">
-                                <div class="image">
-                                    <img src="<?php THEMEDIR; ?>/wp-content/themes/recrubo/dist/images/testimonial.png" alt="" srcset="">
-                                </div>
-                                <div class="info">
-                                    <h4 class="name">Mila Price</h4>
-                                    <span class="title">HR bij Tele Performance</span>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <span>
-                                    “We are happy to hear you had a positive experience! We value your input and encourage you to let us know more details about your experience with us.”
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="testimonial-wrapper">
-                            <div class="personal-info d-flex">
-                                <div class="image">
-                                    <img src="<?php THEMEDIR; ?>/wp-content/themes/recrubo/dist/images/testimonial.png" alt="" srcset="">
-                                </div>
-                                <div class="info">
-                                    <h4 class="name">Mila Price</h4>
-                                    <span class="title">HR bij Tele Performance</span>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <span>
-                                    “We are happy to hear you had a positive experience! We value your input and encourage you to let us know more details about your experience with us.”
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="testimonial-wrapper">
-                            <div class="personal-info d-flex">
-                                <div class="image">
-                                    <img src="<?php THEMEDIR; ?>/wp-content/themes/recrubo/dist/images/testimonial.png" alt="" srcset="">
-                                </div>
-                                <div class="info">
-                                    <h4 class="name">Mila Price</h4>
-                                    <span class="title">HR bij Tele Performance</span>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <span>
-                                    “We are happy to hear you had a positive experience!
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
+                <?php if( have_rows('testimonial') ): ?>
+                    <!-- Slider main container -->
+                    <div class="swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <?php while( have_rows('testimonial') ): the_row(); ?>
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-wrapper">
+                                            <div class="personal-info d-flex">
+                                                <div class="image d-flex align-center">
+                                                    <img src="<?php the_sub_field('afbeelding'); ?>" alt="" srcset="">
+                                                </div>
+                                                <div class="info">
+                                                    <h4 class="name"><?php the_sub_field('naam'); ?></h4>
+                                                    <span class="title"><?php the_sub_field('functie'); ?></span>
+                                                </div>
+                                            </div>
+                                            <div class="content">
+                                                <span>
+                                                    <?php the_sub_field('quote'); ?>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                            <?php endwhile; ?>
+                            <!-- If we need pagination -->
 
-            </div>
+                        </div>
 
+                    </div>
+                <?php endif; ?>
+        </div>
+        <div class="swiper-pagination"></div>
+    </section>
+
+<?php
+if( get_field('cta_aan') ) {
+
+    $color = get_field('cta_achtergrond_kleur');
+
+    if($color == 'blauw') {
+        $bg_class = 'bg-blue';
+        $button_color = 'blue';
+    }
+    elseif ($color == 'groen') {
+        $bg_class = 'bg-green';
+        $button_color = 'green';
+    }
+    elseif ($color == 'oranje') {
+        $bg_class = 'bg-orange';
+        $button_color = 'orange';
+    }
+    elseif ($color == 'roze') {
+        $bg_class = 'bg-pink';
+        $button_color = 'pink';
+    }
+
+
+    ?>
+    <section class="recrubo-cta <?php echo $bg_class; ?> text-center">
+        <div class="container">
+            <h2 class="white"><?php echo the_field('cta_blok_titel'); ?></h2>
+            <a href="<?php echo the_field('cta_button_url'); ?>" class="button <?php echo $button_color; ?> bg-white"><?php echo the_field('cta_button_tekst'); ?></a>
         </div>
     </section>
+<?php }; ?>
 
 <?php get_footer(); ?>

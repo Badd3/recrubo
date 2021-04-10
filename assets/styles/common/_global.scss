@@ -27,6 +27,10 @@ h2 {
   @include breakpoint(md){
     font-size: $h2;
   }
+
+  &.white {
+    color: white;
+  }
 }
 
 h3 {
@@ -120,6 +124,22 @@ img {
 
 .pink {
   color: $color-pink;
+}
+
+.bg-blue {
+  background-color: $color-blue;
+}
+
+.bg-green {
+  background-color: $color-green;
+}
+
+.bg-orange{
+  background-color: $color-orange;
+}
+
+.bg-pink{
+  background-color: $color-pink
 }
 
 .bg-light-blue {

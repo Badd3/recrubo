@@ -8,6 +8,7 @@ const swiper = new Swiper('.swiper-container', {
   slidesPerView: 4,
   spaceBetween: 20,
   autoplay: true,
+  grabCursor: true,
   breakpoints: {
     // when window width is >= 320px
     320: {
