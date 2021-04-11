@@ -76,12 +76,24 @@ p {
 }
 
 a {
+  font-size: 14px;
   text-decoration: none;
-  color: #1c1c1c;
-  font-weight: bold;
-  font-family: 'Poppins';
+  // font-weight: bold;
+  // font-family: 'Poppins';
+
+  @include breakpoint(md){
+    font-size: 18px;
+  }
   &:hover {
     // color: $color-link-hover;
+  }
+
+  &.gray {
+    color: #999999;
+
+    &:hover {
+      color: #fff;
+    }
   }
 }
 
@@ -160,11 +172,13 @@ img {
 
 //Standaard Recrubo button
 .button {
-  font-weight: 100;
+  font-weight: 600;
   font-size: 16px;
   border-radius: 20px;
   padding: 15px 30px 15px 30px;
   display: inline-block;
+
+
   &:after {
     content: url(/wp-content/themes/recrubo/dist/images/right.svg);
     padding: 0px 8px;
@@ -191,8 +205,11 @@ img {
     background-color: $color-pink;
   }
 
-  &.black:after {
-    content: url(/wp-content/themes/recrubo/dist/images/right-black.svg);
-    background-color: rgba(0, 0, 0, 0.1);
+  &.black{
+    color: #1c1c1c;
+      &:after {
+      content: url(/wp-content/themes/recrubo/dist/images/right-black.svg);
+      background-color: rgba(0, 0, 0, 0.1);
+    }
   }
 }

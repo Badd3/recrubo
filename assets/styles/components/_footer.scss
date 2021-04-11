@@ -1,7 +1,9 @@
 .site-footer {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  // margin-top: 2rem;
+  // margin-bottom: 2rem;
+  padding: 100px 0;
   text-align: center;
+  background-color: #1c1c1c;
 
   @include breakpoint(md) {
     text-align: left;
@@ -12,15 +14,52 @@
   display: flex;
   flex-flow: column nowrap;
 
+
   @include breakpoint(md) {
     flex-flow: row nowrap;
   }
 
   .widget {
-    flex-basis: 100%;
+    text-align: left;
+    margin-bottom: 50px;
+
+    @include breakpoint(md){
+      margin-bottom: 0;
+    }
+    &:nth-child(1){
+      flex: 2;
+    }
+    &:nth-child(2), &:nth-child(3){
+      flex: 1;
+    }
   }
 
-  .widget h3 {
+  .widget h4 {
     margin-top: 0;
+    font-size: 20px;
   }
+
+  .contact-info {
+    p{
+      margin-bottom: 15px;
+      line-height: 1.15;
+      color: #999999;
+    }
+  }
+
+  .footer-diensten, .footer-algemeen {
+    display: flex;
+    flex-flow: column;
+
+    h4 {
+      color: white;
+      margin-bottom: 15px;
+    }
+    a {
+      margin-bottom: 15px;
+
+    }
+  }
+
+
 }

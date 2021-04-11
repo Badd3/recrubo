@@ -13,12 +13,44 @@
   a {
     font-size: 16px;
   }
+
+  #menu-header > li > a{
+    padding-bottom: 25px;
+  }
+
+  .menu-item-has-children {
+    position: relative;
+
+    &:hover .sub-menu {
+      display: flex;
+    }
+    > .sub-menu {
+      display: none;
+      position: absolute;
+      flex-flow: column;
+      border-radius: 20px;
+      box-shadow: 0 0 20px 1px rgba(103, 105, 116, 0.2);
+      background-color: #ffffff;
+      text-align: center;
+      padding: 20px;
+      bottom: -204px;
+      left: -35px;
+      > li {
+        margin: 8px 0;
+      }
+      > li a {
+        font-size: 14px;
+        font-weight: 100;
+        padding: 10px 0;
+      }
+    }
+  }
 }
 
 .site-header.shadow {
-  -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
-  -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
-  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  -webkit-box-shadow: 3px 10px 18px 1px rgba(103, 105, 116, 0.1);
+  -moz-box-shadow: 3px 10px 18px 1px rgba(103, 105, 116, 0.1);
+  box-shadow: 3px 10px 18px 1px rgba(103, 105, 116, 0.1);
 }
 
 .site-title {
@@ -44,16 +76,27 @@
     margin-right: 1rem;
     font-size: 16px;
     a {
-      color: #1c1c1c;
+      color: #8E8E8E;
       text-decoration: none;
       font-family: 'Open Sans';
       font-weight: 600;
     }
+    &.menu-item {
+
+      & a:hover {
+        color: #1c1c1c;
+      }
+    }
 
     &.current-menu-item a {
       color: $color-blue;
-      border-bottom: 2px solid;
+      border-bottom: 3px solid;
       padding-bottom: 25px;
+
+      &:hover {
+        color: $color-blue;
+        border-bottom: 3px solid;
+      }
     }
   }
 }
@@ -84,6 +127,25 @@
     padding: 5px 20px;
     border-radius: 20px;
   }
+}
 
-
+//Animation of phone nr
+.telnr a {
+  position: relative;
+  &:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: -2px;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  background: black;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+  }
+  &:hover:after {
+    width: 100%;
+    left: 0;
+  }
 }
