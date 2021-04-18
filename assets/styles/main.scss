@@ -20,4 +20,12 @@
 @import "components/posts";
 @import "components/sidebar";
 @import "components/widgets";
-@import "components/page-home";
+
+
+//Recrubo Components
+@import "recrubo-components/hero";
+@import "recrubo-components/recrubo-block";
+
+//Page
+@import "page/page-home";
+

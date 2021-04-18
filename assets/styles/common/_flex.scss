@@ -23,8 +23,17 @@
   flex-flow: row wrap;
 }
 
+.row-reverse-nowrap {
+flex-flow: row wrap;
+  @include breakpoint(md){
+    flex-flow: row-reverse nowrap;
+  }
+}
 .row-nowrap {
-  flex-flow: row nowrap;
+flex-flow: row wrap;
+  @include breakpoint(md){
+    flex-flow: row nowrap;
+  }
 }
 
 .align-center {

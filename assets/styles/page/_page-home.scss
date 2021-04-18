@@ -1,21 +1,4 @@
-.hero {
-  min-height: 600px;
-  @include breakpoint(md){
-    min-height: 890px;
-  }
-  .hero-left p {
-    margin-bottom: 50px;
-    max-width: 500px;
 
-  }
-  .hero-left h1 {
-    max-width: 566px;
-    padding-right: 100px;
-  }
-  .hero-cta .button:first-of-type{
-    margin-bottom: 10px;
-  }
-}
 
 .onze-diensten {
   justify-content: space-between;
@@ -116,34 +99,45 @@
   }
 }
 
-.recrubo-block {
 
-  // @include breakpoint(md){
-  //   min-height: 890px;
-  // }
-  margin-bottom: 100px;
-  .recrubo-block__inner {
+// .recrubo-block {
+//   display: grid;
+//   grid-template-columns: repeat(12, 1fr);
+// //   @include breakpoint(md){
+// //     min-height: 890px;
+// //   }
+//   position: relative;
+//   margin-bottom: 100px;
+//   .recrubo-block__inner {
+//     grid-column-start: 1;
+//     grid-column-end: 9;
+//     grid-row-start: 1;
+//     padding: 50px 20px;
+//     border-radius: 20px;
 
-    padding: 50px 20px;
-    border-radius: 20px;
+//     @include breakpoint (md){
+//       flex: 0 0 80%;
+//     }
+//     @include breakpoint(lg){
+//     flex: 0 0 70%;
+//     padding: 50px 50px 50px;
+//     }
+//     @include breakpoint(lg){
+//     padding: 100px 100px 100px;
+//     }
 
-    @include breakpoint (md){
-      flex: 0 0 80%;
-    }
-    @include breakpoint(lg){
-    flex: 0 0 70%;
-    padding: 50px 50px 50px;
-    }
-    @include breakpoint(lg){
-    padding: 100px 100px 100px;
-    }
+//     p{
+//       max-width: 620px;
+//       margin-bottom: 30px;
+//     }
+//   }
 
-    p{
-      max-width: 620px;
-      margin-bottom: 30px;
-    }
-  }
-}
+//   .recrubo-block__img {
+//     grid-column-start: 8;
+//     grid-column-end: 13;
+//     grid-row-start: 1;
+//   }
+// }
 
 .testimonials {
   text-align: center;
@@ -156,6 +150,11 @@
   .swiper-container {
     width:100%;
     padding: 30px;
+
+    .swiper-slide {
+      //Slides niet perfect in beeld door deze css
+      max-width: 300px;
+    }
   }
 
   .testimonial-wrapper {
@@ -163,6 +162,7 @@
     box-shadow: 0 0 20px 1px rgba(103, 105, 116, 0.2);
     border-radius: 20px 20px 20px 0;
     min-height: 233px;
+    max-width: 300px;
     // max-height: 233px;
     .personal-info {
       margin-bottom: 15px;

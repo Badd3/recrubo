@@ -1,0 +1,80 @@
+.recrubo-block {
+
+  // @include breakpoint(md){
+  //   min-height: 890px;
+  // }
+  position: relative;
+  margin-bottom: 100px;
+  .recrubo-block__inner {
+
+    padding: 50px 20px;
+    border-radius: 20px;
+    @include breakpoint(sm){
+      flex: 0 1 85%;
+    }
+    @include breakpoint (md){
+      flex: 0 1 50%;
+    }
+    @include breakpoint(lg){
+    flex: 0 0 70%;
+    padding: 50px 50px 50px;
+    }
+    @include breakpoint(lg){
+    padding: 100px 100px 100px;
+    }
+
+    p{
+      max-width: 620px;
+      margin-bottom: 30px;
+    }
+  }
+  .recrubo-block__img {
+
+    @include breakpoint(md){
+    flex: 0 1 50%;
+    }
+  }
+}
+
+//Homepage Chatbots
+
+.recrubo-block.row-nowrap {
+
+  .recrubo-block__img{
+    @include breakpoint(sm){
+      flex: 0 1 50%;
+      margin-top: -50px;
+      margin-left: auto;
+    }
+    @include breakpoint(lg){
+      margin-left: -110px;
+      flex: unset;
+      margin-top: 0px;
+    }
+    @include breakpoint(xl){
+      margin-left: -150px;
+    }
+
+  }
+}
+
+.recrubo-block.row-reverse-nowrap {
+
+  .recrubo-block__img{
+    @include breakpoint(sm){
+      flex: 0 1 50%;
+      margin-top: -50px;
+      margin-left: auto;
+    }
+    @include breakpoint(lg){
+      margin-left: unset;
+      margin-right: -110px;
+      flex: unset;
+      margin-top: 0px;
+    }
+    @include breakpoint(xl){
+      margin-right: -100px;
+    }
+
+  }
+}

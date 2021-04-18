@@ -21,7 +21,7 @@
                     <?php wp_nav_menu(array('theme_location' => 'primary')); ?>
                 </nav>
                 <div class="site-logo">
-                    i
+                    <img src="<?php THEMEDIR;?>/wp-content/themes/recrubo/dist/images/recrubo-logo.png" alt="" srcset="">
                 </div>
                 <div class="header-cta d-flex row-wrap">
                     <div class="telnr">
@@ -29,8 +29,16 @@
                     </div>
                         <a href="/contact" class="contact">Contact</a>
                 </div>
+                <div id="nav-burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
     </header>
+    <div class="mobile-menu">
+        <?php wp_nav_menu(array('theme_location' => 'primary')); ?>
+    </div>
 
     <section class="site-content">

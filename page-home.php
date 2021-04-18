@@ -67,18 +67,26 @@
     </section>
 
     <section class="recrubo-block chatbot d-flex row-nowrap align-center">
-        <div class="recrubo-block__inner bg-light-blue">
-            <h2><?php the_field('cta_chatbots_titel'); ?></h2>
-            <p><?php the_field('cta_chatbots_subtekst'); ?></p>
-            <a class="button bg-white shadow blue" href="<?php the_field('cta_chatbots_knop_url'); ?>"><?php the_field('cta_chatbots_knoptekst'); ?></a>
-        </div>
+        <!-- <div class="recrubo-block__grid"> -->
+            <div class="recrubo-block__inner bg-light-blue">
+                <h2><?php the_field('cta_chatbots_titel'); ?></h2>
+                <p><?php the_field('cta_chatbots_subtekst'); ?></p>
+                <a class="button bg-white shadow blue" href="<?php the_field('cta_chatbots_knop_url'); ?>"><?php the_field('cta_chatbots_knoptekst'); ?></a>
+            </div>
+            <div class="recrubo-block__img">
+                <img src="<?php the_field('cta_chatbots_img'); ?>" alt="" srcset="">
+            </div>
+        <!-- </div> -->
     </section>
 
-    <section class="recrubo-block automatisering d-flex row-nowrap align-center flex-end">
+    <section class="recrubo-block automatisering d-flex row-reverse-nowrap align-center">
         <div class="recrubo-block__inner bg-light-green">
             <h2><?php the_field('cta_automatisering_titel'); ?></h2>
             <p><?php the_field('cta_automatisering_subtekst'); ?></p>
-            <a class="button bg-white shadow green" href="<?php the_field('cta_chatbots_knop_url'); ?>"><?php the_field('cta_automatisering_knoptekst'); ?></a>
+            <a class="button bg-white shadow green" href="<?php the_field('cta_automatisering_knop_url'); ?>"><?php the_field('cta_automatisering_knoptekst'); ?></a>
+        </div>
+        <div class="recrubo-block__img">
+            <img src="<?php the_field('cta_automatisering_img'); ?>" alt="" srcset="">
         </div>
     </section>
 
@@ -88,13 +96,19 @@
             <p><?php the_field('cta_platformen_subtekst'); ?></p>
             <a class="button bg-white shadow orange" href="<?php the_field('cta_platformen_knop_url'); ?>"><?php the_field('cta_platformen_knoptekst'); ?></a>
         </div>
+        <div class="recrubo-block__img">
+            <img src="<?php the_field('cta_platformen_img'); ?>" alt="" srcset="">
+        </div>
     </section>
 
-    <section class="recrubo-block marketing d-flex row-nowrap align-center flex-end">
+    <section class="recrubo-block marketing d-flex row-reverse-nowrap align-center">
         <div class="recrubo-block__inner bg-light-pink">
             <h2><?php the_field('cta_marketing_titel'); ?></h2>
             <p><?php the_field('cta_marketing_subtekst'); ?></p>
             <a class="button bg-white shadow pink" href="<?php the_field('cta_marketing_knop_url'); ?>"><?php the_field('cta_marketing_knoptekst'); ?></a>
+        </div>
+        <div class="recrubo-block__img">
+            <img src="<?php the_field('cta_marketing_img'); ?>" alt="" srcset="">
         </div>
     </section>
 </div> <!-- container -->
