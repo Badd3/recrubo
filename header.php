@@ -21,7 +21,9 @@
                     <?php wp_nav_menu(array('theme_location' => 'primary')); ?>
                 </nav>
                 <div class="site-logo">
-                    <img src="<?php THEMEDIR;?>/wp-content/themes/recrubo/dist/images/recrubo-logo.png" alt="" srcset="">
+                    <a href="<?php echo home_url(); ?>">
+                        <img src="<?php THEMEDIR;?>/wp-content/themes/recrubo/dist/images/recrubo-logo.png" alt="" srcset="">
+                    </a>
                 </div>
                 <div class="header-cta d-flex row-wrap">
                     <div class="telnr">

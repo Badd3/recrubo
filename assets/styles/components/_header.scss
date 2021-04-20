@@ -134,6 +134,7 @@
   @include breakpoint(lg){
     left: 50%;
     transform: translate(-50%, 0);
+    top: -5px;
   }
 
   img{

@@ -10,6 +10,9 @@
                 <a class="button black" href="<?php the_field('hero_button_rechts_url'); ?>"><?php the_field('hero_button_rechts'); ?></a>
             </div>
         </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
     </section>
 
     <section class="onze-diensten d-flex row-wrap">

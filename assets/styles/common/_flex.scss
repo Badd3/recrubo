@@ -10,6 +10,10 @@
   justify-content: space-between;
 }
 
+.space-around{
+  justify-content: space-around;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -48,6 +52,10 @@ flex-flow: row wrap;
 }
 .flex-23 {
   flex: 23%;
+}
+
+.flex-25{
+  flex: 25%;
 }
 .flex-30 {
   flex: 30%;

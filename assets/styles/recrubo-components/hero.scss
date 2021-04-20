@@ -17,4 +17,31 @@
   .hero-cta .button:first-of-type{
     margin-bottom: 10px;
   }
+  //Styling voor de dienstpagina Hero
+  &.dienst {
+
+
+    .hero-left{
+      flex: 0 0 80%;
+        h1 {
+        max-width: 730px;
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+
+#demo-bot {
+
+  right: 0;
+ height: 614px;
+ width:  376px;
+ border-radius: 20px;
+ overflow: hidden;
+
+ @include breakpoint(xl){
+    position: absolute;
+ }
+//  border-radius: 20px;
 }

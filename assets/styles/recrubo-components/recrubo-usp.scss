@@ -1,0 +1,31 @@
+.usp {
+  margin-bottom: 100px;
+  .usp-block{
+    flex-flow: row nowrap;
+    flex: 100%;
+    margin-bottom: 15px;
+
+    @include breakpoint(md) {
+      flex: 50%;
+    }
+    @include breakpoint(lg) {
+      flex: 25%;
+      justify-content: center;
+      margin-bottom: 0;
+    }
+    .usp-icon{
+      border-radius: 20px;
+      padding:  18px;
+      background-color: #fff;
+      margin-right: 15px;
+      img{
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    span {
+      font-size: 16px;
+    }
+  }
+}

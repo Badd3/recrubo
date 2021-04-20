@@ -34,9 +34,39 @@
     flex: 0 1 50%;
     }
   }
+
+  &.full-width {
+    flex: 100%;
+    border-radius: 20px;
+
+    @include breakpoint(md){
+      padding: 0 50px;
+    }
+
+    @include breakpoint(lg){
+      // padding: 100px;
+    }
+    .recrubo-block__inner{
+      padding: 50px 20px;
+      flex: 100%;
+      @include breakpoint(md){
+        flex: 65%;
+        padding: 100px 50px 100px 50px;
+      }
+      // max-width: 620px;
+    }
+    .recrubo-block__img{
+      align-self: flex-end;
+      display: flex;
+      flex: 100%;
+      @include breakpoint(md){
+        flex: 35%;
+      }
+    }
+  }
 }
 
-//Homepage Chatbots
+//Recrubo block img right
 
 .recrubo-block.row-nowrap {
 
@@ -57,7 +87,7 @@
 
   }
 }
-
+//Recrubo block img left
 .recrubo-block.row-reverse-nowrap {
 
   .recrubo-block__img{
@@ -76,5 +106,12 @@
       margin-right: -100px;
     }
 
+  }
+}
+
+.recrubo-block.row-reverse {
+  flex-flow: row wrap;
+  @include breakpoint(md){
+    flex-flow: row-reverse
   }
 }
