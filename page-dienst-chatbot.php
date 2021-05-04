@@ -112,6 +112,12 @@ $template_color = get_field('template_kleur');
                 // Load sub field value.
                 ?>
                 <div class="accordion-wrapper shadow <?php echo $accordion_class; ?>">
+                    <div class="circle-plus closed">
+                        <!-- <div class="circle"> -->
+                            <div class="horizontal"></div>
+                            <div class="vertical"></div>
+                        <!-- </div> -->
+                    </div>
                     <button class="accordion"><?php the_sub_field('faq_titel'); ?></button>
                     <div class="panel">
                         <p><?php the_sub_field('faq_reveal'); ?></p>
@@ -155,25 +161,31 @@ $template_color = get_field('template_kleur');
 
 
         $state = true;
-        if($i % 2 == 0){
-            $state = !$state;
-        }
+            if($i % 2 == 0){
+                $state = !$state;
+            }
 
-        if($state):
-            $accordion_class = "even";
+            if($state):
+                $accordion_class = "even";
 
-        else:
-            $accordion_class = "uneven";
-        endif;
+            else:
+                $accordion_class = "uneven";
+            endif;
 
             // Load sub field value.
             ?>
-            <div class="accordion-wrapper shadow <?php echo $accordion_class; ?>">
-                <button class="accordion"><?php the_sub_field('faq_titel'); ?></button>
-                <div class="panel">
-                    <p><?php the_sub_field('faq_reveal'); ?></p>
+                <div class="accordion-wrapper shadow <?php echo $accordion_class; ?>">
+                    <div class="circle-plus closed">
+                        <!-- <div class="circle"> -->
+                            <div class="horizontal"></div>
+                            <div class="vertical"></div>
+                        <!-- </div> -->
+                    </div>
+                    <button class="accordion"><?php the_sub_field('faq_titel'); ?></button>
+                    <div class="panel">
+                        <p><?php the_sub_field('faq_reveal'); ?></p>
+                    </div>
                 </div>
-            </div>
             <?php
             // Do something...
 

@@ -1,117 +1,160 @@
+// .recrubo-block {
+
+//   // @include breakpoint(md){
+//   //   min-height: 890px;
+//   // }
+//   position: relative;
+//   margin-bottom: 100px;
+//   .recrubo-block__inner {
+
+//     padding: 50px 20px;
+//     border-radius: 20px;
+//     @include breakpoint(sm){
+//       flex: 0 1 85%;
+//     }
+//     @include breakpoint (md){
+//       flex: 0 1 50%;
+//     }
+//     @include breakpoint(lg){
+//     flex: 0 0 70%;
+//     padding: 50px 50px 50px;
+//     }
+//     @include breakpoint(lg){
+//     padding: 100px 100px 100px;
+//     }
+
+//     p{
+//       max-width: 620px;
+//       margin-bottom: 30px;
+//     }
+//   }
+//   .recrubo-block__img {
+
+//     @include breakpoint(md){
+//     flex: 0 1 50%;
+//     }
+//   }
+
+//   &.full-width {
+//     flex: 100%;
+//     border-radius: 20px;
+
+//     @include breakpoint(md){
+//       padding: 0 50px;
+//     }
+
+//     @include breakpoint(lg){
+//       // padding: 100px;
+//     }
+//     .recrubo-block__inner{
+//       padding: 50px 20px;
+//       flex: 100%;
+//       @include breakpoint(md){
+//         flex: 65%;
+//         padding: 100px 50px 100px 50px;
+//       }
+//       // max-width: 620px;
+//     }
+//     .recrubo-block__img{
+//       align-self: flex-end;
+//       display: flex;
+//       flex: 100%;
+//       @include breakpoint(md){
+//         flex: 35%;
+//       }
+//     }
+//   }
+// }
+
+// //Recrubo block img right
+
+// .recrubo-block.row-nowrap {
+
+//   .recrubo-block__img{
+//     @include breakpoint(sm){
+//       flex: 0 1 50%;
+//       margin-top: -50px;
+//       margin-left: auto;
+//     }
+//     @include breakpoint(lg){
+//       margin-left: -110px;
+//       flex: unset;
+//       margin-top: 0px;
+//     }
+//     @include breakpoint(xl){
+//       margin-left: -150px;
+//     }
+
+//   }
+// }
+// //Recrubo block img left
+// .recrubo-block.row-reverse-nowrap {
+
+//   .recrubo-block__img{
+//     @include breakpoint(sm){
+//       flex: 0 1 50%;
+//       margin-top: -50px;
+//       margin-left: auto;
+//     }
+//     @include breakpoint(lg){
+//       margin-left: unset;
+//       margin-right: -110px;
+//       flex: unset;
+//       margin-top: 0px;
+//     }
+//     @include breakpoint(xl){
+//       margin-right: -100px;
+//     }
+
+//   }
+// }
+
+// .recrubo-block.row-reverse {
+//   flex-flow: row wrap;
+//   @include breakpoint(md){
+//     flex-flow: row-reverse
+//   }
+// }
+
 .recrubo-block {
+  display: flex;
 
-  // @include breakpoint(md){
-  //   min-height: 890px;
-  // }
-  position: relative;
+  justify-content: space-between;
+
+  align-items: center;
+  border-radius: 20px;
   margin-bottom: 100px;
-  .recrubo-block__inner {
-
-    padding: 50px 20px;
-    border-radius: 20px;
-    @include breakpoint(sm){
-      flex: 0 1 85%;
-    }
-    @include breakpoint (md){
-      flex: 0 1 50%;
-    }
-    @include breakpoint(lg){
-    flex: 0 0 70%;
-    padding: 50px 50px 50px;
-    }
-    @include breakpoint(lg){
-    padding: 100px 100px 100px;
-    }
-
-    p{
-      max-width: 620px;
-      margin-bottom: 30px;
-    }
-  }
-  .recrubo-block__img {
-
-    @include breakpoint(md){
-    flex: 0 1 50%;
-    }
-  }
-
-  &.full-width {
-    flex: 100%;
-    border-radius: 20px;
-
-    @include breakpoint(md){
-      padding: 0 50px;
-    }
-
-    @include breakpoint(lg){
-      // padding: 100px;
-    }
-    .recrubo-block__inner{
-      padding: 50px 20px;
-      flex: 100%;
-      @include breakpoint(md){
-        flex: 65%;
-        padding: 100px 50px 100px 50px;
-      }
-      // max-width: 620px;
-    }
-    .recrubo-block__img{
-      align-self: flex-end;
-      display: flex;
-      flex: 100%;
-      @include breakpoint(md){
-        flex: 35%;
-      }
-    }
-  }
-}
-
-//Recrubo block img right
-
-.recrubo-block.row-nowrap {
-
-  .recrubo-block__img{
-    @include breakpoint(sm){
-      flex: 0 1 50%;
-      margin-top: -50px;
-      margin-left: auto;
-    }
-    @include breakpoint(lg){
-      margin-left: -110px;
-      flex: unset;
-      margin-top: 0px;
-    }
-    @include breakpoint(xl){
-      margin-left: -150px;
-    }
-
-  }
-}
-//Recrubo block img left
-.recrubo-block.row-reverse-nowrap {
-
-  .recrubo-block__img{
-    @include breakpoint(sm){
-      flex: 0 1 50%;
-      margin-top: -50px;
-      margin-left: auto;
-    }
-    @include breakpoint(lg){
-      margin-left: unset;
-      margin-right: -110px;
-      flex: unset;
-      margin-top: 0px;
-    }
-    @include breakpoint(xl){
-      margin-right: -100px;
-    }
-
-  }
-}
-
-.recrubo-block.row-reverse {
-  flex-flow: row wrap;
+  flex-flow: column;
+  text-align: center;
+  padding: 50px 50px 0 50px;
   @include breakpoint(md){
-    flex-flow: row-reverse
+    flex-flow: row nowrap;
+    text-align: left;
+    padding: 50px 65px 0px 100px;
   }
+  &.reverse {
+    @include breakpoint(md){
+      flex-flow: row-reverse nowrap;
+      padding: 50px 100px 0px 65px;
+    }
+  }
+  .recrubo-block__inner {
+    margin-bottom: 40px;
+    @include breakpoint(md){
+      flex: 0 1 60%;
+      margin-bottom: 0;
+    }
+
+  }
+
+  .recrubo-block__img {
+    max-width: 278px;
+    display: grid;
+    @include breakpoint(md){
+      max-width: unset;
+      flex: 0 1 40%;
+    }
+  }
+
+
 }

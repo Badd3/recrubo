@@ -111,6 +111,13 @@ $template_color = get_field('template_kleur');
                 // Load sub field value.
                 ?>
                 <div class="accordion-wrapper shadow <?php echo $accordion_class; ?>">
+                        <div class="circle-plus closed">
+                            <div class="circle">
+                                <div class="horizontal"></div>
+                                <div class="vertical"></div>
+                            </div>
+                        </div>
+                        <h1>hoi</h1>
                     <button class="accordion"><?php the_sub_field('faq_titel'); ?></button>
                     <div class="panel">
                         <p><?php the_sub_field('faq_reveal'); ?></p>

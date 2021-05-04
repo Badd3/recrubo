@@ -18,30 +18,33 @@
     margin-bottom: 10px;
   }
   //Styling voor de dienstpagina Hero
-  &.dienst {
+  // &.dienst {
 
 
-    .hero-left{
-      flex: 0 0 80%;
-        h1 {
-        max-width: 730px;
-        padding-right: 0;
-      }
-    }
-  }
+  //   .hero-left{
+
+  //     @include breakpoint(lg){
+  //     flex: 0 0 80%;
+  //     }
+  //       h1 {
+  //       max-width: 730px;
+  //       padding-right: 0;
+  //     }
+  //   }
+  // }
 }
 
+//Chatbot pagina
+// #demo-bot {
 
-#demo-bot {
-
-  right: 0;
- height: 614px;
- width:  376px;
- border-radius: 20px;
- overflow: hidden;
-
- @include breakpoint(xl){
-    position: absolute;
- }
+//  right: 0;
+//  height: 614px;
+//  width:  376px;
 //  border-radius: 20px;
-}
+//  overflow: hidden;
+//   position: relative;
+//  @media screen and (min-width: 1070px){
+//     position: absolute;
+//  }
+
+// }
