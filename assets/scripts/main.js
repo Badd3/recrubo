@@ -1,5 +1,9 @@
 import Swiper, { Pagination } from 'swiper';
+import aos from 'aos/dist/aos.js';
 
+aos.init({
+  delay: 200,
+});
 var $ = jQuery;
 Swiper.use([Pagination]);
 const swiper = new Swiper('.swiper-container', {
@@ -69,21 +73,22 @@ function mobileMenu() {
 
 mobileMenu();
 
+function faq_blokken(){
+  var acc = document.getElementsByClassName("accordion");
+  var i;
 
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    this.previousElementSibling.classList.toggle("opened");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
-  });
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      this.previousElementSibling.classList.toggle("opened");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  }
 }
 
-
+faq_blokken();

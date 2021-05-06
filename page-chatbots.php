@@ -1,4 +1,4 @@
-<?php /* Template Name: Template Flexibel */ ?>
+<?php /* Template Name: Template Dienst Chatbot */ ?>
 
 <?php get_header();
 if( get_field('template_kleur') ) {
@@ -27,8 +27,9 @@ $template_color = get_field('template_kleur');
 ?>
 <div class="container">
 
-    <section class="hero dienst align-center d-flex recrubo-block">
-        <div class="hero-left recrubo-block__inner <?php echo $general_bg_color; ?>">
+    <section class="hero chatbots">
+        <div class="background <?php echo $general_bg_color; ?>"></div>
+        <div class="hero-left <?php echo $general_bg_color; ?>">
             <h1><?php the_field('hero_titel'); ?></h1>
             <p><?php the_field('hero_subtekst'); ?></p>
             <div class="hero-cta">
@@ -36,7 +37,9 @@ $template_color = get_field('template_kleur');
                 <a class="button bg-white <?php echo $general_button_color; ?> shadow" href="<?php the_field('hero_button_rechts_url'); ?>"><?php the_field('hero_button_rechts'); ?></a>
             </div>
         </div>
+        <div data-aos="fade-up" id="demo-bot" class="shadow"></div>
     </section>
+
     <?php
     // Check value exists.
         if( have_rows('flexible_dienst') ):
@@ -190,8 +193,6 @@ $template_color = get_field('template_kleur');
             // Do something...
         endif;
         ?>
-
-
 
 </div>
 <?php

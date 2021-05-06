@@ -166,6 +166,16 @@ img {
 .bg-light-blue {
   background-color: $color-light-blue;
 }
+//Voor de usecase op hero chatbots pagina
+.hero.chatbots {
+  >.background.bg-light-blue {
+    background: none;
+
+    @include breakpoint(sm){
+      background-color: $color-light-blue;
+    }
+  }
+}
 
 .bg-light-green {
   background-color: $color-light-green;
@@ -182,11 +192,15 @@ img {
 //Standaard Recrubo button
 .button {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
   border-radius: 20px;
-  padding: 15px 30px 15px 30px;
-  display: inline-block;
 
+  padding: 13px 13px 15px 13px;
+  display: inline-block;
+  @include breakpoint(md){
+    padding: 15px 30px 15px 30px;
+    font-size: 16px;
+  }
 
   &:after {
     content: url(/wp-content/themes/recrubo/dist/images/right.svg);

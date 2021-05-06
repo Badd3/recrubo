@@ -1,19 +1,22 @@
 <?php get_header(); ?>
 <div class="container">
 
-    <section class="hero align-center d-flex recrubo-block">
+    <section class="hero">
         <div class="hero-left recrubo-block__inner bg-light-blue">
-            <h1><?php the_field('hero_titel'); ?></h1>
-            <p><?php the_field('hero_subtekst'); ?></p>
-            <div class="hero-cta">
-                <a class="button bg-white shadow blue" href="<?php the_field('hero_button_rechts_url'); ?>"><?php the_field('hero_button_links'); ?></a>
-                <a class="button black" href="<?php the_field('hero_button_rechts_url'); ?>"><?php the_field('hero_button_rechts'); ?></a>
+            <div class="hero-left__wrapper">
+                <h1><?php the_field('hero_titel'); ?></h1>
+                <p><?php the_field('hero_subtekst'); ?></p>
+                <div class="hero-cta">
+                    <a class="button bg-white shadow blue" href="<?php the_field('hero_button_rechts_url'); ?>"><?php the_field('hero_button_links'); ?></a>
+                    <a class="button black" href="<?php the_field('hero_button_rechts_url'); ?>"><?php the_field('hero_button_rechts'); ?></a>
+                </div>
             </div>
         </div>
-        <div class="scroll-indicator">
+        <!-- <div class="scroll-indicator">
             <div class="mouse"></div>
-        </div>
+        </div> -->
     </section>
+
 
     <section class="onze-diensten d-flex row-wrap">
         <h2 class="flex-100 "> Onze Diensten</h2>
@@ -77,7 +80,7 @@
                 <a class="button bg-white shadow blue" href="<?php the_field('cta_chatbots_knop_url'); ?>"><?php the_field('cta_chatbots_knoptekst'); ?></a>
             </div>
             <div class="recrubo-block__img">
-                <img src="<?php the_field('cta_chatbots_img'); ?>" alt="" srcset="">
+                <img data-aos="fade-left" src="<?php the_field('cta_chatbots_img'); ?>" alt="" srcset="">
             </div>
         <!-- </div> -->
     </section>
@@ -89,7 +92,7 @@
             <a class="button bg-white shadow green" href="<?php the_field('cta_automatisering_knop_url'); ?>"><?php the_field('cta_automatisering_knoptekst'); ?></a>
         </div>
         <div class="recrubo-block__img">
-            <img src="<?php the_field('cta_automatisering_img'); ?>" alt="" srcset="">
+            <img data-aos="fade-right" src="<?php the_field('cta_automatisering_img'); ?>" alt="" srcset="">
         </div>
     </section>
 
@@ -100,7 +103,7 @@
             <a class="button bg-white shadow orange" href="<?php the_field('cta_platformen_knop_url'); ?>"><?php the_field('cta_platformen_knoptekst'); ?></a>
         </div>
         <div class="recrubo-block__img">
-            <img src="<?php the_field('cta_platformen_img'); ?>" alt="" srcset="">
+            <img data-aos="fade-left" src="<?php the_field('cta_platformen_img'); ?>" alt="" srcset="">
         </div>
     </section>
 
@@ -111,9 +114,11 @@
             <a class="button bg-white shadow pink" href="<?php the_field('cta_marketing_knop_url'); ?>"><?php the_field('cta_marketing_knoptekst'); ?></a>
         </div>
         <div class="recrubo-block__img">
-            <img src="<?php the_field('cta_marketing_img'); ?>" alt="" srcset="">
+            <img data-aos="fade-right" src="<?php the_field('cta_marketing_img'); ?>" alt="" srcset="">
         </div>
     </section>
+
+
 </div> <!-- container -->
     <section class="testimonials">
         <div class="container">

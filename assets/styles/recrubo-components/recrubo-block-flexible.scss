@@ -1,0 +1,41 @@
+.recrubo-block__flexible {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+  border-radius: 20px;
+  margin-bottom: 100px;
+  flex-flow: column;
+  text-align: center;
+  padding: 50px 50px 0 50px;
+  @include breakpoint(md){
+    flex-flow: row nowrap;
+    text-align: left;
+    padding: 50px 65px 0px 100px;
+  }
+  &.reverse {
+    @include breakpoint(md){
+      flex-flow: row-reverse nowrap;
+      padding: 50px 100px 0px 65px;
+    }
+  }
+  .recrubo-block__inner {
+    margin-bottom: 40px;
+    @include breakpoint(md){
+      flex: 0 1 60%;
+      margin-bottom: 0;
+    }
+
+  }
+
+  .recrubo-block__img {
+    max-width: 278px;
+    display: grid;
+    @include breakpoint(md){
+      max-width: unset;
+      flex: 0 1 40%;
+    }
+  }
+}
+
