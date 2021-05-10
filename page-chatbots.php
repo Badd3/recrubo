@@ -24,6 +24,7 @@ $template_color = get_field('template_kleur');
 }
 
 
+
 ?>
 <div class="container">
 
@@ -33,198 +34,17 @@ $template_color = get_field('template_kleur');
             <h1><?php the_field('hero_titel'); ?></h1>
             <p><?php the_field('hero_subtekst'); ?></p>
             <div class="hero-cta">
-                <a class="button bg-white <?php echo $general_button_color; ?> shadow" href="<?php the_field('hero_button_rechts_url'); ?>"><?php the_field('hero_button_links'); ?></a>
+                <a class="button bg-white <?php echo $general_button_color; ?> shadow" href="<?php the_field('hero_button_links_url'); ?>"><?php the_field('hero_button_links'); ?></a>
                 <a class="button bg-white <?php echo $general_button_color; ?> shadow" href="<?php the_field('hero_button_rechts_url'); ?>"><?php the_field('hero_button_rechts'); ?></a>
             </div>
         </div>
         <div data-aos="fade-up" id="demo-bot" class="shadow"></div>
     </section>
 
-    <?php
-    // Check value exists.
-        if( have_rows('flexible_dienst') ):
-
-            // Loop through rows.
-            while ( have_rows('flexible_dienst') ) : the_row();
-
-                // Case: Paragraph layout.
-                if( get_row_layout() == 'accordion' ):
-
-                    if( have_rows('faq_repeater') ):
-                        // Loop through rows. ?>
-                        <section class="recrubo-accordion d-flex">
-                        <?php
-                        $i = 0;
-                        while( have_rows('faq_repeater') ) : the_row();
-
-
-                        $state = true;
-                        if($i % 2 == 0){
-                            $state = !$state;
-                        }
-
-                        if($state):
-                            $accordion_class = "even";
-                            $fade_option = "fade-left";
-
-                        else:
-                            $accordion_class = "uneven";
-                            $fade_option = "fade-right";
-                        endif;
-
-                            // Load sub field value.
-                            ?>
-                            <div data-aos="<?php echo $fade_option; ?>" class="accordion-wrapper shadow <?php echo $accordion_class; ?>">
-                                    <div class="circle-plus closed">
-                                        <div class="circle">
-                                            <div class="horizontal"></div>
-                                            <div class="vertical"></div>
-                                        </div>
-                                    </div>
-                                <button class="accordion"><?php the_sub_field('faq_titel'); ?></button>
-                                <div class="panel">
-                                    <p><?php the_sub_field('faq_reveal'); ?></p>
-                                </div>
-                            </div>
-                            <?php
-                            // Do something...
-
-                        $i++;
-                        // End loop.
-                        endwhile;
-                        ?>
-                        </section>
-                        <?php
-                    // No value.
-                    else :
-                        // Do something...
-                    endif;
-
-
-                elseif( get_row_layout() == 'recrubo_block' ): ?>
-                    <section class="recrubo-block__flexible <?php echo $general_bg_color; if(get_sub_field('positie_afbeelding') == 'links'): echo ' reverse'; endif; ?>">
-                        <div class="recrubo-block__inner">
-                            <h2><?php the_sub_field('blok_titel'); ?></h2>
-                            <p><?php the_sub_field('blok_subtekst'); ?></p>
-                            <a class="button bg-white shadow <?php echo $general_button_color; ?>" href="<?php the_sub_field('blok_button_links_url'); ?>"><?php the_sub_field('blok_button_links'); ?></a>
-                            <a class="button black" href="<?php the_sub_field('blok_button_rechts_url'); ?>"><?php the_sub_field('blok_button_rechts'); ?></a>
-                        </div>
-                        <div  class="recrubo-block__img">
-                            <img data-aos="fade-up" src="<?php the_sub_field('blok_afbeelding'); ?>" alt="" srcset="">
-                        </div>
-                    </section>
-                    <?php
-
-                elseif( get_row_layout() == 'usp' ):
-                        // $count = 0;
-                        $count = 0;
-                        $usp_repeater = get_sub_field('usp_repeater');
-
-                        if(!empty($usp_repeater)) {
-                            $count = count($usp_repeater);
-                        }
-                            if( have_rows('usp_repeater') ):
-
-                                if($count <= 2) {
-                                    $spacing = 'space-around';
-                                }
-                                else {
-                                    $spacing = 'space-between';
-                                }
-                                ?>
-                                <section class="usp d-flex align-center row-wrap <?php echo $spacing; ?>">
-                                <?php
-
-                                 // Loop through rows.
-                                while( have_rows('usp_repeater') ) : the_row();
-                                ?>
-                                    <div class="usp-block d-flex row-nowrap align-center">
-                                        <div class="usp-icon shadow">
-                                            <img src="<?php the_sub_field('icon'); ?>" alt="" srcset="">
-                                        </div>
-                                        <span><?php the_sub_field('tekst'); ?></span>
-                                    </div>
-                                <?php
-                            // End loop.
-
-                            // $count++;
-                            endwhile;
-                            ?>
-                                </section>
-
-                            <?php
-                            else :
-                            // Do something...
-                            endif;
-
-                elseif( get_row_layout() == 'image_centered' ): ?>
-                    <section class="recrubo-img__big">
-                        <div class="content__wrapper <?php echo $general_bg_color; ?>">
-                            <div class="content">
-                                    <h2><?php the_sub_field('titel'); ?></h2>
-                                    <p><?php the_sub_field('tekst'); ?></p>
-                            </div>
-                        </div>
-
-                        <div data-aos="fade-up" class="img__wrapper">
-                            <img src="<?php the_sub_field('afbeelding'); ?>" alt="" srcset="">
-                        </div>
-                    </section>
-                <?php elseif( get_row_layout() == 'quote_block' ): ?>
-                    <section class="recrubo-quote__block <?php if(get_sub_field('spiegelen') == true): echo ' reverse'; endif; ?>">
-                        <div class="background <?php echo $general_bg_color; ?>"></div>
-                        <div class="content">
-                            <?php the_sub_field('tekst'); ?>
-                        </div>
-                        <div data-aos="<?php if(get_sub_field('spiegelen') == true){ echo 'fade-right';} else {echo 'fade-left';}; ?>" class="image">
-                            <img src="<?php the_sub_field('afbeelding'); ?>" alt="">
-                        </div>
-                    </section>
-
-                <?php
-                endif;
-
-
-            // End loop.
-            endwhile;
-
-        // No value.
-        else :
-            // Do something...
-        endif;
-        ?>
+    <?php $args = [$general_bg_color, $general_button_color]; ?>
+    <?php get_template_part('partials/flexible-content', '', $args); ?>
 
 </div>
-<?php
-if( get_field('cta_aan') ) {
-
-    $color = get_field('cta_achtergrond_kleur');
-
-    if($color == 'blauw') {
-        $bg_class = 'bg-blue';
-        $button_color = 'blue';
-    }
-    elseif ($color == 'groen') {
-        $bg_class = 'bg-green';
-        $button_color = 'green';
-    }
-    elseif ($color == 'oranje') {
-        $bg_class = 'bg-orange';
-        $button_color = 'orange';
-    }
-    elseif ($color == 'roze') {
-        $bg_class = 'bg-pink';
-        $button_color = 'pink';
-    }
-
-
-    ?>
-    <section class="recrubo-cta <?php echo $bg_class; ?> text-center">
-        <div class="container">
-            <h2 class="white"><?php echo the_field('cta_blok_titel'); ?></h2>
-            <a href="<?php echo the_field('cta_button_url'); ?>" class="button <?php echo $button_color; ?> bg-white"><?php echo the_field('cta_button_tekst'); ?></a>
-        </div>
-    </section>
-<?php }; ?>
+<?php get_template_part('partials/pre-footer-cta'); ?>
 
 <?php get_footer(); ?>

@@ -18,7 +18,7 @@
     </section>
 
 
-    <section class="onze-diensten d-flex row-wrap">
+    <section id="<?php the_field('diensten_id'); ?>" class="onze-diensten d-flex row-wrap">
         <h2 class="flex-100 "> Onze Diensten</h2>
         <div class="column-wrap flex-100 d-flex row-wrap space-between">
             <?php
@@ -72,7 +72,7 @@
         </div>
     </section>
 
-    <section class="recrubo-block chatbot d-flex row-nowrap align-center">
+    <section id="<?php the_field('chatbot_id'); ?>" class="recrubo-block chatbot d-flex row-nowrap align-center">
         <!-- <div class="recrubo-block__grid"> -->
             <div class="recrubo-block__inner bg-light-blue">
                 <h2><?php the_field('cta_chatbots_titel'); ?></h2>
@@ -85,7 +85,7 @@
         <!-- </div> -->
     </section>
 
-    <section class="recrubo-block automatisering d-flex row-reverse-nowrap align-center">
+    <section id="<?php the_field('automatisering_id'); ?>" class="recrubo-block automatisering d-flex row-reverse-nowrap align-center">
         <div class="recrubo-block__inner bg-light-green">
             <h2><?php the_field('cta_automatisering_titel'); ?></h2>
             <p><?php the_field('cta_automatisering_subtekst'); ?></p>
@@ -96,7 +96,7 @@
         </div>
     </section>
 
-    <section class="recrubo-block platformen d-flex row-nowrap align-center">
+    <section id="<?php the_field('platformen_id'); ?>" class="recrubo-block platformen d-flex row-nowrap align-center">
         <div class="recrubo-block__inner bg-light-orange">
             <h2><?php the_field('cta_platformen_titel'); ?></h2>
             <p><?php the_field('cta_platformen_subtekst'); ?></p>
@@ -107,7 +107,7 @@
         </div>
     </section>
 
-    <section class="recrubo-block marketing d-flex row-reverse-nowrap align-center">
+    <section id="<?php the_field('marketing_id'); ?>" class="recrubo-block marketing d-flex row-reverse-nowrap align-center">
         <div class="recrubo-block__inner bg-light-pink">
             <h2><?php the_field('cta_marketing_titel'); ?></h2>
             <p><?php the_field('cta_marketing_subtekst'); ?></p>

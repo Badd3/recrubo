@@ -7,10 +7,13 @@
 body {
   margin: 0;
   font-size: 18px;
+  overflow-x: hidden;
 }
 
 html {
  font-family: 'Open Sans', 'Poppins';
+ scroll-behavior: smooth;
+//  overflow-x: hidden;
 }
 
 h1 {
@@ -121,10 +124,14 @@ img {
   padding-right: 30px;
   padding-left: 30px;
   width:100%;
+  // overflow-x: hidden;
 }
 
 .site-content {
   margin-top: 85px;
+  >.container {
+    overflow-x: hidden;
+  }
 }
 
 .shadow {
