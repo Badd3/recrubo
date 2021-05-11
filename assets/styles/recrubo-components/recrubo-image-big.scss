@@ -27,4 +27,20 @@
       border-radius: 20px;
     }
   }
+  .video__wrapper {
+    margin-top: -220px;
+    max-width: 1010px;
+    width: 100%;
+    padding-left: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 30px;
+    // padding-top: 56.25%;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    .embed-container {
+      border-radius: 20px;
+    }
+  }
 }

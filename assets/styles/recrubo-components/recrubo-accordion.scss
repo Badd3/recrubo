@@ -99,8 +99,8 @@
 .circle-plus {
     height: 30px;
     width: 30px;
-    background-color: $color-blue;
-    opacity: .7;
+    // background-color: $color-blue;
+    // opacity: .7;
     position: absolute;
     left: 10px;
     top: 10px;
@@ -119,31 +119,54 @@
 .circle-plus .horizontal {
   position: absolute;
   background-color: #fff;
-  width: 15px;
-  height: 1px;
-  left: 22px;
-  margin-left: -15px;
-  top: 17px;
-  margin-top: -2.5px;
+  height: 2px;
+  width: 19px;
+  top: 14px;
+  left: 6px;
+  // margin-top: -2.5px;
   @include breakpoint(md) {
     width: 18px;
-    top: 22px;
-    left: 26px;
+    top: 17px;
+    left: 11px;
+  }
+
+  &.orange {
+    background-color: $color-orange;
+  }
+  &.blue {
+    background-color: $color-blue;
+  }
+  &.green {
+    background-color: $color-green;
+  }
+  &.pink {
+    background-color: $color-pink;
   }
 }
 .circle-plus .vertical {
   position: absolute;
   background-color: #fff;
-  width: 1px;
-  height: 15px;
-  left: 54%;
-  margin-left: -2.5px;
-
-  margin-top: -15px;
-  top: 22px;
+  width: 2px;
+  left: 15px;
+  height: 19px;
+  top: 5px;
   @include breakpoint(md) {
-    height: 16px;
-    top: 26px;
+    height: 19px;
+    left: 19px;
+    top: 9px;
+  }
+
+  &.orange {
+    background-color: $color-orange;
+  }
+  &.blue {
+    background-color: $color-blue;
+  }
+  &.green {
+    background-color: $color-green;
+  }
+  &.pink {
+    background-color: $color-pink;
   }
 }
 

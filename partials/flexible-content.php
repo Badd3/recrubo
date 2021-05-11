@@ -37,10 +37,10 @@
                             // Load sub field value.
                             ?>
                             <div  data-aos="<?php echo $fade_option; ?>" class="accordion-wrapper shadow <?php echo $accordion_class; ?>">
-                                    <div class="circle-plus closed">
+                                    <div class="circle-plus closed <?php echo $general_bg_color; ?>">
                                         <div class="circle">
-                                            <div class="horizontal"></div>
-                                            <div class="vertical"></div>
+                                            <div class="horizontal <?php echo $general_button_color; ?>"></div>
+                                            <div class="vertical <?php echo $general_button_color; ?>"></div>
                                         </div>
                                     </div>
                                 <button class="accordion"><?php the_sub_field('faq_titel'); ?></button>
@@ -128,10 +128,16 @@
                                     <p><?php the_sub_field('tekst'); ?></p>
                             </div>
                         </div>
-
-                        <div data-aos="fade-up" class="img__wrapper">
-                            <img src="<?php the_sub_field('afbeelding'); ?>" alt="" srcset="">
-                        </div>
+                        <?php if(get_sub_field('afbeelding_of_video') == 'afbeelding'){ ?>
+                            <div data-aos="fade-up" class="img__wrapper">
+                                <img src="<?php the_sub_field('afbeelding'); ?>" alt="" srcset="">
+                            </div>
+                       <?php } ?>
+                        <?php if(get_sub_field('afbeelding_of_video') == 'video'){ ?>
+                            <div data-aos="fade-up" class="video__wrapper">
+                                <?php the_sub_field('video'); ?>
+                            </div>
+                       <?php } ?>
                     </section>
                 <?php elseif( get_row_layout() == 'quote_block' ): ?>
                     <section id="<?php the_sub_field('sectie_id'); ?>" class="recrubo-quote__block <?php if(get_sub_field('spiegelen') == true): echo ' reverse'; endif; ?>">

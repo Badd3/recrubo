@@ -31,11 +31,20 @@
     &.chatbot{
       .icon {
       background-color: $color-light-blue;
+
+       svg g {
+         fill: $color-blue;
+         transition: .5s;
+       }
       }
       &:hover {
         .icon{
           background-color:$color-blue;
           box-shadow: -5px 5px 20px 0 rgba(0, 184, 253, 0.5);
+
+          svg g {
+            fill: $color-light-blue;
+          }
         }
       }
     }
@@ -43,11 +52,19 @@
     &.automatisering{
       .icon {
       background-color: $color-light-green;
+        svg g {
+          fill: $color-green;
+          transition: .5s;
+        }
       }
       &:hover {
         .icon{
           background-color:$color-green;
           box-shadow: -5px 5px 20px 0 rgb(70, 184, 89);
+
+          svg g {
+            fill: $color-light-green;
+          }
         }
       }
     }
@@ -55,11 +72,20 @@
     &.platformen{
       .icon {
         background-color: $color-light-orange;
+
+        svg g {
+          fill: $color-orange;
+          transition: .5s;
+        }
       }
       &:hover {
         .icon{
           background-color:$color-orange;
           box-shadow: -5px 5px 20px 0 rgb(172, 124, 70);
+
+          svg g {
+            fill: $color-light-orange;
+          }
         }
       }
     }
@@ -67,11 +93,19 @@
     &.marketing{
       .icon {
         background-color: $color-light-pink;
+
+        svg g {
+          fill: $color-pink;
+        }
       }
       &:hover {
         .icon{
-          background-color:$color-light-pink;
+          background-color:$color-pink;
           box-shadow: -5px 5px 20px 0 rgb(187, 115, 163);
+
+          svg g {
+            fill: $color-light-pink;
+          }
         }
       }
     }
