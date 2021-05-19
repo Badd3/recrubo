@@ -13,7 +13,7 @@ body {
 html {
  font-family: 'Open Sans', 'Poppins';
  scroll-behavior: smooth;
-//  overflow-x: hidden;
+ overflow-x: hidden;
 }
 
 h1 {
@@ -130,7 +130,7 @@ img {
 .site-content {
   margin-top: 85px;
   >.container {
-    overflow-x: hidden;
+    // overflow-x: hidden;
   }
 }
 
@@ -240,4 +240,16 @@ img {
       background-color: rgba(0, 0, 0, 0.1);
     }
   }
+}
+
+.jumptarget::before {
+  content:"";
+  display:block;
+  height:50px; /* fixed header height*/
+  margin:-50px 0 0; /* negative fixed header height */
+}
+
+//hiermee zorgen we dat er scroll margin is aan de bovekant wanneer we anchor links gebruiken
+section {
+  scroll-margin-top: 200px;
 }

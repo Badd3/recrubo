@@ -13,4 +13,11 @@ array_map(function ($file) {
     }
     require_once $filepath;
 }, ['helpers', 'setup', 'shortcodes']);
+
+
+if( function_exists('acf_add_options_page') ) {
+	acf_add_options_page();
+}
+
+
 ?>

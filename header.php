@@ -12,8 +12,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
     <?php wp_head(); ?>
 </head>
+<?php
+if( get_field('template_kleur', get_the_ID()) ) {
+$template_color = get_field('template_kleur');
 
-<body <?php body_class(); ?>>
+    if($template_color == 'blauw') {
+        $custom_body_class = 'blue-body';
+
+
+    }
+    elseif ($template_color == 'groen') {
+        $custom_body_class = 'green-body';
+
+    }
+    elseif ($template_color == 'oranje') {
+        $custom_body_class = 'orange-body';
+
+    }
+    elseif ($template_color== 'roze') {
+        $custom_body_class = 'pink-body';
+
+    }
+}
+?>
+<body <?php body_class($custom_body_class); ?>>
 
     <header class="site-header">
         <div class="container">
@@ -41,7 +63,7 @@
         </div>
     </header>
     <div class="mobile-menu">
-        <?php wp_nav_menu(array('theme_location' => 'primary')); ?>
+        <?php wp_nav_menu(array('menu' => 'mobile-header')); ?>
     </div>
 
     <section class="site-content">

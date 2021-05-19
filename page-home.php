@@ -11,21 +11,30 @@
                     <a class="button black" href="<?php the_field('hero_button_rechts_url'); ?>"><?php the_field('hero_button_rechts'); ?></a>
                 </div>
             </div>
+
+
         </div>
+        <!-- <div class="video-wrapper">
+                <video autoplay src="<?php THEMEDIR; ?>/wp-content/themes/recrubo/dist/images/recrubo-home.mp4"></video>
+            </div> -->
         <!-- <div class="scroll-indicator">
             <div class="mouse"></div>
         </div> -->
     </section>
 
+    </div> <!-- container -->
 
+    <?php get_template_part('partials/clients'); ?>
+
+    <div class="container">
     <section id="<?php the_field('diensten_id'); ?>" class="onze-diensten d-flex row-wrap">
         <h2 class="flex-100 "> Onze Diensten</h2>
-        <div class="column-wrap flex-100 d-flex row-wrap space-between">
+        <div class="column-wrap flex-100 d-flex space-between">
             <?php
             $chatbots = get_field('chatbots');
             ?>
-            <div class="column chatbot">
-                <a href="">
+            <div data-aos-delay="50" data-aos="fade-up" class="column chatbot">
+                <a href="<?php echo $chatbots['url']; ?>">
                     <div class="icon">
                         <!-- <img src="<?php THEMEDIR; ?>/wp-content/themes/recrubo/dist/images/chat.svg" alt="" srcset=""> -->
                         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
@@ -42,8 +51,8 @@
             <?php
             $automatisering = get_field('automatisering');
             ?>
-            <div class="column automatisering">
-                <a href="">
+            <div data-aos-delay="100" data-aos="fade-up" class="column automatisering">
+                <a href="<?php echo $automatisering['url']; ?>">
                     <div class="icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="38" height="36" viewBox="0 0 38 36">
                             <g fill-rule="evenodd">
@@ -59,8 +68,8 @@
             <?php
                 $plaformen = get_field('platformen')
             ?>
-            <div class="column platformen">
-                <a href="">
+            <div data-aos-delay="150" data-aos="fade-up" class="column platformen">
+                <a href="<?php echo $plaformen['url']; ?>">
                     <div class="icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="34" height="36" viewBox="0 0 34 36">
                             <g fill-rule="evenodd">
@@ -75,8 +84,8 @@
             <?php
                 $marketing = get_field('marketing')
             ?>
-            <div class="column marketing">
-                <a href="">
+            <div data-aos-delay="200" data-aos="fade-up" class="column marketing">
+                <a href="<?php echo $marketing['url']; ?>">
                     <div class="icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="23" height="36" viewBox="0 0 23 36">
                         <g fill-rule="evenodd">
@@ -92,7 +101,7 @@
         </div>
     </section>
 
-    <section id="<?php the_field('chatbot_id'); ?>" class="recrubo-block chatbot d-flex row-nowrap align-center">
+    <section data-aos="fade-up" id="<?php the_field('chatbot_id'); ?>" class="recrubo-block chatbot d-flex row-nowrap align-center">
         <!-- <div class="recrubo-block__grid"> -->
             <div class="recrubo-block__inner bg-light-blue">
                 <h2><?php the_field('cta_chatbots_titel'); ?></h2>
@@ -105,7 +114,7 @@
         <!-- </div> -->
     </section>
 
-    <section id="<?php the_field('automatisering_id'); ?>" class="recrubo-block automatisering d-flex row-reverse-nowrap align-center">
+    <section data-aos="fade-up" id="<?php the_field('automatisering_id'); ?>" class="recrubo-block automatisering d-flex row-reverse-nowrap align-center">
         <div class="recrubo-block__inner bg-light-green">
             <h2><?php the_field('cta_automatisering_titel'); ?></h2>
             <p><?php the_field('cta_automatisering_subtekst'); ?></p>
@@ -116,7 +125,7 @@
         </div>
     </section>
 
-    <section id="<?php the_field('platformen_id'); ?>" class="recrubo-block platformen d-flex row-nowrap align-center">
+    <section data-aos="fade-up" id="<?php the_field('platformen_id'); ?>" class="recrubo-block platformen d-flex row-nowrap align-center">
         <div class="recrubo-block__inner bg-light-orange">
             <h2><?php the_field('cta_platformen_titel'); ?></h2>
             <p><?php the_field('cta_platformen_subtekst'); ?></p>
@@ -127,7 +136,7 @@
         </div>
     </section>
 
-    <section id="<?php the_field('marketing_id'); ?>" class="recrubo-block marketing d-flex row-reverse-nowrap align-center">
+    <section data-aos="fade-up" id="<?php the_field('marketing_id'); ?>" class="recrubo-block marketing d-flex row-reverse-nowrap align-cente">
         <div class="recrubo-block__inner bg-light-pink">
             <h2><?php the_field('cta_marketing_titel'); ?></h2>
             <p><?php the_field('cta_marketing_subtekst'); ?></p>
@@ -140,76 +149,11 @@
 
 
 </div> <!-- container -->
-    <section class="testimonials">
-        <div class="container">
-            <h2>Wat onze klanten zeggen</h2>
-        </div>
-        <div class="recrubo-slider">
-                <?php if( have_rows('testimonial') ): ?>
-                    <!-- Slider main container -->
-                    <div class="swiper-container">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                            <?php while( have_rows('testimonial') ): the_row(); ?>
-                                    <div class="swiper-slide">
-                                        <div class="testimonial-wrapper">
-                                            <div class="personal-info d-flex">
-                                                <div class="image d-flex align-center">
-                                                    <img src="<?php the_sub_field('afbeelding'); ?>" alt="" srcset="">
-                                                </div>
-                                                <div class="info">
-                                                    <h4 class="name"><?php the_sub_field('naam'); ?></h4>
-                                                    <span class="title"><?php the_sub_field('functie'); ?></span>
-                                                </div>
-                                            </div>
-                                            <div class="content">
-                                                <span>
-                                                    <?php the_sub_field('quote'); ?>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                            <?php endwhile; ?>
-                            <!-- If we need pagination -->
 
-                        </div>
-
-                    </div>
-                <?php endif; ?>
-        </div>
-        <div class="swiper-pagination"></div>
-    </section>
-
-<?php
-if( get_field('cta_aan') ) {
-
-    $color = get_field('cta_achtergrond_kleur');
-
-    if($color == 'blauw') {
-        $bg_class = 'bg-blue';
-        $button_color = 'blue';
-    }
-    elseif ($color == 'groen') {
-        $bg_class = 'bg-green';
-        $button_color = 'green';
-    }
-    elseif ($color == 'oranje') {
-        $bg_class = 'bg-orange';
-        $button_color = 'orange';
-    }
-    elseif ($color == 'roze') {
-        $bg_class = 'bg-pink';
-        $button_color = 'pink';
-    }
+    <?php get_template_part('partials/testimonials-home'); ?>
 
 
-    ?>
-    <section class="recrubo-cta <?php echo $bg_class; ?> text-center">
-        <div class="container">
-            <h2 class="white"><?php echo the_field('cta_blok_titel'); ?></h2>
-            <a href="<?php echo the_field('cta_button_url'); ?>" class="button <?php echo $button_color; ?> bg-white"><?php echo the_field('cta_button_tekst'); ?></a>
-        </div>
-    </section>
-<?php }; ?>
+
+    <?php get_template_part('partials/pre-footer-cta'); ?>
 
 <?php get_footer(); ?>

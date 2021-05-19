@@ -63,3 +63,36 @@
 
 
 }
+
+
+.clients {
+  margin: 50px 0;
+  overflow: hidden;
+  >.container {
+    overflow: hidden;
+  }
+}
+.client-slider {
+
+  .swiper-wrapper {
+    align-items: center;
+  }
+  .swiper-slide{
+    display: flex;
+    justify-content: center;
+
+    .clients-image__wrapper {
+      max-width: 180px;
+      height: auto;
+      >img {
+        width: 100%;
+        filter: grayscale(100%);
+
+        &:hover {
+          filter: grayscale(0%);
+          cursor: default;
+        }
+      }
+    }
+  }
+}

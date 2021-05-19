@@ -2,8 +2,9 @@ import Swiper, { Pagination } from 'swiper';
 import aos from 'aos/dist/aos.js';
 
 aos.init({
-  delay: 200,
+  delay: 300,
 });
+
 var $ = jQuery;
 Swiper.use([Pagination]);
 const swiper = new Swiper('.swiper-container', {
@@ -42,6 +43,36 @@ const swiper = new Swiper('.swiper-container', {
   }
 });
 
+const clientSwiper = new Swiper('.client-slider', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: false,
+  slidesPerView: 4,
+  spaceBetween: 20,
+  autoplay: true,
+  breakpoints: {
+    // when window width is >= 320px
+    250: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    530: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    // when window width is >= 640px
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 40
+    },
+
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 40
+    }
+  }
+});
+
 function headerScroll () {
   let scrollpos = window.scrollY
   const header = document.querySelector(".site-header")
@@ -57,7 +88,7 @@ function headerScroll () {
     if (scrollpos >= header_height) { add_class_on_scroll() }
     else { remove_class_on_scroll() }
 
-    console.log(scrollpos)
+    // console.log(scrollpos)
   })
 }
 headerScroll();
@@ -92,3 +123,18 @@ function faq_blokken(){
 }
 
 faq_blokken();
+
+var acc = document.getElementsByClassName("mobile-toggler");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+  //   var panel = this.parentNode.lastChild;
+  //   if (panel.style.maxHeight) {
+  //     panel.style.maxHeight = null;
+  //   } else {
+  //     panel.style.maxHeight = panel.scrollHeight + "px";
+  //   }
+  });
+}
