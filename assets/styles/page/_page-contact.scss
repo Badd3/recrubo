@@ -79,6 +79,50 @@
       }
     }
   }
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column;
+
+  @include breakpoint(sm) {
+    flex-flow: row nowrap;
+  }
+  >div {
+    display: flex;
+    justify-content: center;
+    flex: 25%;
+    transition: .4s;
+    text-decoration: underline;
+
+    >span {
+      padding: 20px;
+      font-size: 14px;
+
+      @include breakpoint(md){
+        font-size: 18px;
+      }
+
+    }
+
+    &:hover{
+      box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.15);
+      text-decoration: none;
+      border-radius: 50px;
+      cursor: pointer;
+
+      >span {
 
 
+        a {
+          color: $color-blue;
+        }
+      }
+    }
+  }
+  a {
+    color: black;
+  }
 }

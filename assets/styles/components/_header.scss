@@ -83,6 +83,7 @@
   }
 
   .header-cta {
+
     .contact {
       background-color: $color-light-orange;
     }
@@ -251,6 +252,11 @@
   }
   .telnr {
     margin-right: 30px;
+      display: flex;
+      flex-flow: row nowrap;
+      .tel-icon {
+        margin-right: 10px;
+      }
   }
   a {
     color: $color-text;

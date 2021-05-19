@@ -45,6 +45,7 @@ $template_color = get_field('template_kleur');
     <?php get_template_part('partials/flexible-content', '', $args); ?>
 
 </div>
+<?php get_template_part('partials/clients'); ?>
 <?php get_template_part('partials/pre-footer-cta'); ?>
 
 <?php get_footer(); ?>

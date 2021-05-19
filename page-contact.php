@@ -13,7 +13,22 @@
         </div>
     </section>
 
+    <section class="contact-info">
+        <div class="contact-info_block">
+            <span><a href="tel:">+31 612345678</a></span>
+        </div>
+        <div class="contact-info_block">
+            <span><a href="mailto:">info@recrubo.nl</a></span>
+        </div>
+        <div class="contact-info_block">
+            <span>Piusstraat 54, 5038WT Tilburg</span>
+        </div>
+        <div class="contact-info_block">
+            <span>KvK: 80480233</span>
+        </div>
 
+
+    </section>
 </div>
     <?php get_template_part('partials/clients'); ?>
 
