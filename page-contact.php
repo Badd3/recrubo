@@ -13,7 +13,7 @@
         </div>
     </section>
 
-    <section class="contact-info">
+    <section class="contact-info_page">
         <div class="contact-info_block">
             <span><a href="tel:">+31 612345678</a></span>
         </div>

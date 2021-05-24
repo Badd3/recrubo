@@ -32,7 +32,7 @@ $template_color = get_field('template_kleur');
             <h1><?php the_field('hero_titel'); ?></h1>
             <p><?php the_field('hero_subtekst'); ?></p>
             <div class="hero-cta">
-                <a class="button bg-white <?php echo $general_button_color; ?> shadow" href="<?php the_field('hero_button_rechts_url'); ?>"><?php the_field('hero_button_links'); ?></a>
+                <a class="button bg-white <?php echo $general_button_color; ?> shadow" href="<?php the_field('hero_button_links_url'); ?>"><?php the_field('hero_button_links'); ?></a>
                 <a class="button bg-white <?php echo $general_button_color; ?> shadow" href="<?php the_field('hero_button_rechts_url'); ?>"><?php the_field('hero_button_rechts'); ?></a>
             </div>
         </div>

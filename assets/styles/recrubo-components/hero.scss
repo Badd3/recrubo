@@ -8,7 +8,7 @@
   @include breakpoint(sm){
     flex-flow: row nowrap;
     margin-top: 135px;
-    margin-bottom: 200px;
+    margin-bottom: 130px;
   }
   @include breakpoint(md){
     // min-height: 890px;
@@ -84,3 +84,82 @@
 }
 
 
+.hero-home {
+  margin-top: 60px;
+  position: relative;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  @include breakpoint(md){
+    flex-flow: row nowrap;
+    margin-top: 135px;
+    // margin-bottom: 130px;
+  }
+  @include breakpoint(md){
+    // min-height: 890px;
+  }
+
+  .hero-left{
+    border-radius: 20px;
+    flex: 0 1 50%;
+    margin-bottom: 14px;
+    // padding: 20px;
+    // padding-bottom: 150px;
+    @include breakpoint(sm){
+      // padding: 50px;
+    }
+    @include breakpoint(lg){
+      // padding: 50px;
+      margin-bottom: 0;
+    }
+    @include breakpoint(lg){
+      // padding: 50px;
+      flex: 0 1 50%;
+    }
+    @include breakpoint(xl){
+      // padding: 0;
+      flex: 0 1 50%;
+    }
+  }
+
+  .video-wrapper {
+    flex: 0 1 50%;
+  }
+
+  .hero-left p {
+    margin-bottom: 50px;
+    // max-width: 566px;
+  }
+  .hero-cta .button:first-of-type{
+    margin-bottom: 10px;
+  }
+
+  video{
+    width: 100%;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    margin-bottom: -100px;
+    @include breakpoint(md){
+      margin-bottom: 0;
+    }
+  }
+
+    .button.primary {
+      background-color: white;
+      color: $color-blue;
+      &::after {
+        background-color: $color-blue;
+      }
+    }
+
+    .button.secondary{
+      background-color: $color-light-blue;
+      color: $color-blue;
+
+      &::after {
+        background-color: $color-blue;
+      }
+    }
+}

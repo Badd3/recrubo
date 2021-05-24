@@ -1,25 +1,25 @@
 <?php get_header(); ?>
 <div class="container">
 
-    <section class="hero">
-        <div class="hero-left recrubo-block__inner bg-light-blue">
+    <section class="hero-home">
+    <!-- <div class="background bg-light-blue"></div> -->
+        <div class="hero-left recrubo-block__inner">
             <div class="hero-left__wrapper">
                 <h1><?php the_field('hero_titel'); ?></h1>
                 <p><?php the_field('hero_subtekst'); ?></p>
                 <div class="hero-cta">
-                    <a class="button bg-white shadow blue" href="<?php the_field('hero_button_rechts_url'); ?>"><?php the_field('hero_button_links'); ?></a>
-                    <a class="button black" href="<?php the_field('hero_button_rechts_url'); ?>"><?php the_field('hero_button_rechts'); ?></a>
+                    <a class="button primary shadow" href="<?php the_field('hero_button_links_url'); ?>"><?php the_field('hero_button_links'); ?></a>
+                    <a class="button secondary" href="<?php the_field('hero_button_rechts_url'); ?>"><?php the_field('hero_button_rechts'); ?></a>
                 </div>
             </div>
 
 
         </div>
-        <!-- <div class="video-wrapper">
-                <video autoplay src="<?php THEMEDIR; ?>/wp-content/themes/recrubo/dist/images/recrubo-home.mp4"></video>
-            </div> -->
-        <!-- <div class="scroll-indicator">
-            <div class="mouse"></div>
-        </div> -->
+            <div class="video-wrapper">
+                <video autoplay muted playsinline>
+                    <source src="<?php THEMEDIR; ?>/wp-content/themes/recrubo/dist/images/recrubo-home.mp4" type="video/mp4">
+                </video>
+            </div>
     </section>
 
     </div> <!-- container -->

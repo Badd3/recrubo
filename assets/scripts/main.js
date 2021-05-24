@@ -1,4 +1,4 @@
-import Swiper, { Pagination } from 'swiper';
+import Swiper, { Pagination, Autoplay } from 'swiper';
 import aos from 'aos/dist/aos.js';
 
 aos.init({
@@ -6,7 +6,7 @@ aos.init({
 });
 
 var $ = jQuery;
-Swiper.use([Pagination]);
+Swiper.use([Pagination, Autoplay]);
 const swiper = new Swiper('.swiper-container', {
   // Optional parameters
   direction: 'horizontal',
@@ -46,10 +46,10 @@ const swiper = new Swiper('.swiper-container', {
 const clientSwiper = new Swiper('.client-slider', {
   // Optional parameters
   direction: 'horizontal',
-  loop: false,
-  slidesPerView: 4,
-  spaceBetween: 20,
-  autoplay: true,
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    },
   breakpoints: {
     // when window width is >= 320px
     250: {
