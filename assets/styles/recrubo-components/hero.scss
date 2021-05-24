@@ -130,13 +130,18 @@
       flex: 0 1 50%;
     }
     @include breakpoint(xl){
-     padding: 100px;
+      padding: 100px 0 100px 100px;
       flex: 0 1 70%;
     }
   }
 
   .video-wrapper {
     flex: 0 1 50%;
+    overflow: hidden;
+
+    img {
+      transform: scale(1.4);
+    }
   }
 
   .hero-left p {
