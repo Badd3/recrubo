@@ -28,7 +28,7 @@
 
     <div class="container">
     <section id="<?php the_field('diensten_id'); ?>" class="onze-diensten d-flex row-wrap">
-        <h2 class="flex-100 "> Onze Diensten</h2>
+        <h2 class="flex-100 "> Onze diensten</h2>
         <div class="column-wrap flex-100 d-flex space-between">
             <?php
             $chatbots = get_field('chatbots');
