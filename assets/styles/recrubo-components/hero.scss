@@ -114,7 +114,6 @@
   align-items: center;
   flex-flow: column-reverse;
   margin-bottom: 75px;
-
   @include breakpoint(md){
     flex-flow: row nowrap;
     margin-top: 135px;
@@ -157,7 +156,7 @@
     }
     @include breakpoint(xl){
       padding: 100px 0 100px 100px;
-      flex: 0 1 60%;
+      flex: 0 1 50%;
     }
   }
 
