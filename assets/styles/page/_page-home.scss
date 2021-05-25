@@ -5,7 +5,7 @@
 }
 .onze-diensten {
   justify-content: space-between;
-  margin-top: 100px;
+  margin-top: 40px;
   margin-bottom: 100px;
   .column-wrap {
     flex-flow: row wrap;
@@ -143,47 +143,6 @@
   }
 }
 
-.display-none {
-  display:none;
-}
-// .recrubo-block {
-//   display: grid;
-//   grid-template-columns: repeat(12, 1fr);
-// //   @include breakpoint(md){
-// //     min-height: 890px;
-// //   }
-//   position: relative;
-//   margin-bottom: 100px;
-//   .recrubo-block__inner {
-//     grid-column-start: 1;
-//     grid-column-end: 9;
-//     grid-row-start: 1;
-//     padding: 50px 20px;
-//     border-radius: 20px;
-
-//     @include breakpoint (md){
-//       flex: 0 0 80%;
-//     }
-//     @include breakpoint(lg){
-//     flex: 0 0 70%;
-//     padding: 50px 50px 50px;
-//     }
-//     @include breakpoint(lg){
-//     padding: 100px 100px 100px;
-//     }
-
-//     p{
-//       max-width: 620px;
-//       margin-bottom: 30px;
-//     }
-//   }
-
-//   .recrubo-block__img {
-//     grid-column-start: 8;
-//     grid-column-end: 13;
-//     grid-row-start: 1;
-//   }
-// }
 
 .testimonials {
   text-align: center;

@@ -1,6 +1,7 @@
 import Swiper, { Pagination, Autoplay } from 'swiper';
 // import aos from 'aos/dist/aos.js';
 
+
 // aos.init({
 //   delay: 300,
 // });
@@ -136,11 +137,5 @@ var i;
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     this.classList.toggle("active");
-  //   var panel = this.parentNode.lastChild;
-  //   if (panel.style.maxHeight) {
-  //     panel.style.maxHeight = null;
-  //   } else {
-  //     panel.style.maxHeight = panel.scrollHeight + "px";
-  //   }
   });
 }

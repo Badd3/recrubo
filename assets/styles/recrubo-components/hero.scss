@@ -60,6 +60,7 @@
     height: 400px;
     border-radius: 20px;
     overflow: hidden;
+    z-index: 0;
     @include breakpoint(sm){
       margin-top:0;
       flex: 0 1 40%;
@@ -92,6 +93,7 @@
   align-items: center;
   flex-flow: column-reverse;
   margin-bottom: 75px;
+  
   @include breakpoint(md){
     flex-flow: row nowrap;
     margin-top: 135px;

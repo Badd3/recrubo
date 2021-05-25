@@ -38,7 +38,7 @@ $template_color = get_field('template_kleur');
                 <a class="button bg-white <?php echo $general_button_color; ?> shadow" href="<?php the_field('hero_button_rechts_url'); ?>"><?php the_field('hero_button_rechts'); ?></a>
             </div>
         </div>
-        <div data-aos="fade-up" id="demo-bot" class="shadow"></div>
+        <div id="demo-bot" class="shadow"></div>
     </section>
 
     <?php $args = [$general_bg_color, $general_button_color]; ?>
