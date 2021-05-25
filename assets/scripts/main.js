@@ -1,9 +1,9 @@
 import Swiper, { Pagination, Autoplay } from 'swiper';
-import aos from 'aos/dist/aos.js';
+// import aos from 'aos/dist/aos.js';
 
-aos.init({
-  delay: 300,
-});
+// aos.init({
+//   delay: 300,
+// });
 
 var $ = jQuery;
 Swiper.use([Pagination, Autoplay]);
@@ -103,6 +103,12 @@ function mobileMenu() {
 }
 
 mobileMenu();
+
+window.addEventListener('load', (event) => {
+  $("#landing-gif").removeClass("display-none");
+});
+
+
 
 function faq_blokken(){
   var acc = document.getElementsByClassName("accordion");

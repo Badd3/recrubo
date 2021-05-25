@@ -17,7 +17,7 @@
 
         </div>
             <div class="video-wrapper">
-               <img src="<?php THEMEDIR; ?>/wp-content/themes/recrubo/dist/images/no-shadow-recrubo.gif" alt="" srcset="">
+               <img id="landing-gif" class="display-none" src="<?php THEMEDIR; ?>/wp-content/themes/recrubo/dist/images/recrubo-landing.gif" alt="" srcset="">
             </div>
     </section>
 
