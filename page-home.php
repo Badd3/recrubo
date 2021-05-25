@@ -1,9 +1,11 @@
 <?php get_header(); ?>
 <div class="container">
 
-    <section class="hero-home">
+<section class="hero-home">
     <!-- <div class="background bg-light-blue"></div> -->
+    <div class="background bg-light-blue"></div>
         <div class="hero-left recrubo-block__inner">
+
             <div class="hero-left__wrapper">
                 <h1><?php the_field('hero_titel'); ?></h1>
                 <p><?php the_field('hero_subtekst'); ?></p>
@@ -16,9 +18,7 @@
 
         </div>
             <div class="video-wrapper">
-                <video autoplay muted playsinline>
-                    <source src="<?php THEMEDIR; ?>/wp-content/themes/recrubo/dist/images/recrubo-home.mp4" type="video/mp4">
-                </video>
+               <img id="landing-gif" class="display-none" src="<?php THEMEDIR; ?>/wp-content/themes/recrubo/dist/images/recrubo-landing.gif" alt="" srcset="">
             </div>
     </section>
 

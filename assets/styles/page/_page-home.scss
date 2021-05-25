@@ -5,7 +5,7 @@
 }
 .onze-diensten {
   justify-content: space-between;
-  margin-top: 40px;
+  margin-top: 100px;
   margin-bottom: 100px;
   .column-wrap {
     flex-flow: row wrap;
@@ -143,8 +143,11 @@
   }
 }
 
+.display-none {
+  display:none;
+}
 .page-home{
-  .client-slider{
+  .under-hero{
     .swiper-wrapper {
       height: 100px;
 
@@ -154,6 +157,8 @@
     }
   }
 }
+
+
 .testimonials {
   text-align: center;
   margin-bottom: 100px;
@@ -258,3 +263,4 @@
   //   }
   // }
 }
+

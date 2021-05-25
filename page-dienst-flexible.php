@@ -27,14 +27,19 @@ $template_color = get_field('template_kleur');
 ?>
 <div class="container">
 
-    <section class="hero dienst align-center d-flex recrubo-block">
-        <div class="hero-left recrubo-block__inner <?php echo $general_bg_color; ?>">
+    <section class="hero dienst align-center d-flex">
+        <div class="background <?php echo $general_bg_color; ?>"></div>
+        <div class="hero-left">
             <h1><?php the_field('hero_titel'); ?></h1>
             <p><?php the_field('hero_subtekst'); ?></p>
             <div class="hero-cta">
                 <a class="button bg-white <?php echo $general_button_color; ?> shadow" href="<?php the_field('hero_button_links_url'); ?>"><?php the_field('hero_button_links'); ?></a>
                 <a class="button bg-white <?php echo $general_button_color; ?> shadow" href="<?php the_field('hero_button_rechts_url'); ?>"><?php the_field('hero_button_rechts'); ?></a>
             </div>
+        </div>
+
+        <div class="image-wrapper">
+            <img src="<?php the_field('hero_afbeelding'); ?>" alt="" srcset="">
         </div>
     </section>
     <?php $args = [$general_bg_color, $general_button_color]; ?>

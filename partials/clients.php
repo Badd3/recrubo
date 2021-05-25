@@ -1,5 +1,9 @@
 <?php if( have_rows('clients_repeater', 'option') ): ?>
-    <section data-aos="fade-up" class="clients">
+
+    <?php if(is_front_page()) {
+        $under_hero = 'under-hero';
+    } ?>
+    <section data-aos="fade-up" class="clients <?php echo $under_hero; ?>">
         <div class="container">
             <div class="client-slider">
                 <!-- Slider main container -->
