@@ -4,7 +4,6 @@
     <section class="hero-home">
     <!-- <div class="background bg-light-blue"></div> -->
         <div class="hero-left recrubo-block__inner">
-        <div class="background bg-light-blue"></div>
             <div class="hero-left__wrapper">
                 <h1><?php the_field('hero_titel'); ?></h1>
                 <p><?php the_field('hero_subtekst'); ?></p>
@@ -17,7 +16,9 @@
 
         </div>
             <div class="video-wrapper">
-               <img id="landing-gif" class="display-none" src="<?php THEMEDIR; ?>/wp-content/themes/recrubo/dist/images/recrubo-landing.gif" alt="" srcset="">
+                <video autoplay muted playsinline>
+                    <source src="<?php THEMEDIR; ?>/wp-content/themes/recrubo/dist/images/recrubo-home.mp4" type="video/mp4">
+                </video>
             </div>
     </section>
 
@@ -27,7 +28,7 @@
 
     <div class="container">
     <section id="<?php the_field('diensten_id'); ?>" class="onze-diensten d-flex row-wrap">
-        <h2 class="flex-100 "> Onze diensten</h2>
+        <h2 class="flex-100 "> Onze Diensten</h2>
         <div class="column-wrap flex-100 d-flex space-between">
             <?php
             $chatbots = get_field('chatbots');

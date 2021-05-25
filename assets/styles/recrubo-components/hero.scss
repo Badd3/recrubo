@@ -92,24 +92,39 @@
   display: flex;
   align-items: center;
   flex-flow: column-reverse;
-  margin-bottom: 20px;
+  margin-bottom: 75px;
+  
   @include breakpoint(md){
     flex-flow: row nowrap;
     margin-top: 135px;
-    // margin-bottom: 130px;
+    margin-bottom: 70px;
   }
   @include breakpoint(md){
     // min-height: 890px;
   }
-
+  .background{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width:100%;
+    height: 70%;
+    z-index: -1;
+    border-radius: 20px;
+    @include breakpoint(md){
+      width: 80%;
+      top: 0;
+      height: 100%;
+    }
+  }
   .hero-left{
     border-radius: 20px;
     flex: 0 1 50%;
     margin-bottom: 14px;
+    padding: 20px;
     // padding: 20px;
     // padding-bottom: 150px;
     @include breakpoint(sm){
-      // padding: 50px;
+      padding: 50px;
     }
     @include breakpoint(lg){
       // padding: 50px;
@@ -120,7 +135,7 @@
       flex: 0 1 50%;
     }
     @include breakpoint(xl){
-      // padding: 0;
+      padding: 100px 0 100px 100px;
       flex: 0 1 50%;
     }
   }
@@ -128,6 +143,13 @@
   .video-wrapper {
     flex: 0 1 50%;
     overflow: hidden;
+
+    img {
+      transform: scale(1.5);
+      @include breakpoint(md){
+        transform: scale(1.2) translateX(34px);
+      }
+    }
   }
 
   .hero-left p {
