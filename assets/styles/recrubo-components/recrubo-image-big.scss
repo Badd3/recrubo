@@ -1,12 +1,12 @@
 .recrubo-img__big {
-  text-align: center;
+  text-align: left;
   margin-bottom: 100px;
   .content__wrapper {
     border-radius: 20px;
   }
   .content {
 
-      padding: 30px 50px 250px 50px;
+      padding: 50px 25px 250px 50px;
 
     @include breakpoint(sm){
       padding: 50px 75px 280px 75px;

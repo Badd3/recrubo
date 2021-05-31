@@ -102,8 +102,8 @@
     </section>
 
     <section data-aos="fade-up" id="<?php the_field('chatbot_id'); ?>" class="recrubo-block chatbot d-flex row-nowrap align-center">
-        <!-- <div class="recrubo-block__grid"> -->
-            <div class="recrubo-block__inner bg-light-blue">
+        <div class="background bg-light-blue"></div>
+            <div class="recrubo-block__inner">
                 <h2><?php the_field('cta_chatbots_titel'); ?></h2>
                 <p><?php the_field('cta_chatbots_subtekst'); ?></p>
                 <a class="button bg-white shadow blue" href="<?php the_field('cta_chatbots_knop_url'); ?>"><?php the_field('cta_chatbots_knoptekst'); ?></a>
@@ -111,11 +111,11 @@
             <div class="recrubo-block__img">
                 <img data-aos="fade-left" src="<?php the_field('cta_chatbots_img'); ?>" alt="" srcset="">
             </div>
-        <!-- </div> -->
     </section>
 
     <section data-aos="fade-up" id="<?php the_field('automatisering_id'); ?>" class="recrubo-block automatisering d-flex row-reverse-nowrap align-center">
-        <div class="recrubo-block__inner bg-light-green">
+    <div class="background bg-light-green"></div>
+        <div class="recrubo-block__inner">
             <h2><?php the_field('cta_automatisering_titel'); ?></h2>
             <p><?php the_field('cta_automatisering_subtekst'); ?></p>
             <a class="button bg-white shadow green" href="<?php the_field('cta_automatisering_knop_url'); ?>"><?php the_field('cta_automatisering_knoptekst'); ?></a>
@@ -126,7 +126,8 @@
     </section>
 
     <section data-aos="fade-up" id="<?php the_field('platformen_id'); ?>" class="recrubo-block platformen d-flex row-nowrap align-center">
-        <div class="recrubo-block__inner bg-light-orange">
+    <div class="background bg-light-orange"></div>
+        <div class="recrubo-block__inner">
             <h2><?php the_field('cta_platformen_titel'); ?></h2>
             <p><?php the_field('cta_platformen_subtekst'); ?></p>
             <a class="button bg-white shadow orange" href="<?php the_field('cta_platformen_knop_url'); ?>"><?php the_field('cta_platformen_knoptekst'); ?></a>
@@ -136,8 +137,9 @@
         </div>
     </section>
 
-    <section data-aos="fade-up" id="<?php the_field('marketing_id'); ?>" class="recrubo-block marketing d-flex row-reverse-nowrap align-cente">
-        <div class="recrubo-block__inner bg-light-pink">
+    <section data-aos="fade-up" id="<?php the_field('marketing_id'); ?>" class="recrubo-block marketing d-flex row-reverse-nowrap align-center">
+    <div class="background bg-light-pink"></div>
+        <div class="recrubo-block__inner">
             <h2><?php the_field('cta_marketing_titel'); ?></h2>
             <p><?php the_field('cta_marketing_subtekst'); ?></p>
             <a class="button bg-white shadow pink" href="<?php the_field('cta_marketing_knop_url'); ?>"><?php the_field('cta_marketing_knoptekst'); ?></a>

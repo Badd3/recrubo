@@ -234,6 +234,14 @@
   padding: 100px 0;
   position: relative;
   .background-dots {
+
+  }
+  h2 {
+    margin-bottom: 50px;
+  }
+
+  &::before {
+    content: "";
     top: 0;
     left:0;
     position: absolute;
@@ -242,18 +250,15 @@
     background-image: url('/wp-content/themes/recrubo/dist/images/dots-pattern.svg');
     opacity: .2;
   }
-  h2 {
-    margin-bottom: 50px;
-  }
 }
 
-[data-aos="dots-animation"] {
-  opacity: 0;
-  transition-property: opacity;
-  transition-delay: 1000;
-  &.aos-animate {
-    opacity: .2;
-  }
+// [data-aos="dots-animation"] {
+//   opacity: 0;
+//   transition-property: opacity;
+//   transition-delay: 1000;
+//   &.aos-animate {
+//     opacity: .2;
+//   }
 
   // @media screen and (min-width: 768px) {
   //   transform: translateX(100px);
@@ -262,5 +267,5 @@
   //     transform: translateX(0);
   //   }
   // }
-}
+// }
 

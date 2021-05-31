@@ -15,10 +15,10 @@
 
     <section class="contact-info_page">
         <div class="contact-info_block">
-            <span><a href="tel:">+31 612345678</a></span>
+            <span><a href="tel:0137009700">(013)7009700</a></span>
         </div>
         <div class="contact-info_block">
-            <span><a href="mailto:">info@recrubo.nl</a></span>
+            <span><a href="mailto:info@recrubo.com">info@recrubo.com</a></span>
         </div>
         <div class="contact-info_block">
             <span>Piusstraat 54, 5038WT Tilburg</span>
