@@ -255,3 +255,13 @@ img {
 section {
   scroll-margin-top: 200px;
 }
+
+
+.error-page {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  a {
+    color: $color-blue;
+  }
+}

@@ -13,7 +13,10 @@
 .footer-widgets {
   display: flex;
   flex-flow: column nowrap;
-
+  a {
+    color: #999999;
+    display: block;
+  }
 
   @include breakpoint(md) {
     flex-flow: row nowrap;

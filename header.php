@@ -53,7 +53,7 @@ $template_color = get_field('template_kleur');
                         <div class="tel-icon">
                             <img src="<?php THEMEDIR; ?>/wp-content/themes/recrubo/dist/images/phone-icon.svg" alt="" srcset="">
                         </div>
-                        <a href="tel:+31612345678">+31612345678</a>
+                        <a href="tel:0137009700">(013)7009700</a>
                     </div>
                         <a href="/contact" class="contact">Contact</a>
                 </div>

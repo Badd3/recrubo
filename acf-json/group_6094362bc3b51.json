@@ -1,0 +1,259 @@
+{
+    "key": "group_6094362bc3b51",
+    "title": "Footer CTA",
+    "fields": [
+        {
+            "key": "field_6094362bc6c64",
+            "label": "CTA aan",
+            "name": "cta_aan",
+            "type": "true_false",
+            "instructions": "Zet deze aan om net voor de footer een groot CTA blok te tonen.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_60a582a0fde46",
+            "label": "afbeelding of CTA",
+            "name": "afbeelding_of_cta",
+            "type": "radio",
+            "instructions": "Wil je een afbeelding tonen of CTA blok?",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6094362bc6c64",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "afbeelding": "afbeelding",
+                "cta": "cta"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "cta",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_6094362bc6c90",
+            "label": "CTA achtergrond kleur",
+            "name": "cta_achtergrond_kleur",
+            "type": "radio",
+            "instructions": "Kies de achtergrond kleur van de CTA box.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6094362bc6c64",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_60a582a0fde46",
+                        "operator": "==",
+                        "value": "cta"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "blauw": "Blauw",
+                "groen": "Groen",
+                "oranje": "Oranje",
+                "roze": "Roze"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "blauw",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_6094362bc6ca4",
+            "label": "CTA Blok Titel",
+            "name": "cta_blok_titel",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6094362bc6c64",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_60a582a0fde46",
+                        "operator": "==",
+                        "value": "cta"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Benieuwd naar wat Recrubo voor jou kan betekenen?",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6094362bc6cb4",
+            "label": "CTA Button Tekst",
+            "name": "cta_button_tekst",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6094362bc6c64",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_60a582a0fde46",
+                        "operator": "==",
+                        "value": "cta"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Contact opnemen",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6094362bc6cc0",
+            "label": "CTA Button URL",
+            "name": "cta_button_url",
+            "type": "link",
+            "instructions": "Kies hier pagina waar deze knop naar toe dient te leiden",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6094362bc6c64",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_60a582a0fde46",
+                        "operator": "==",
+                        "value": "cta"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url"
+        },
+        {
+            "key": "field_60a58307fde4b",
+            "label": "pre footer achtergrond afbeelding",
+            "name": "pre_footer_achtergrond_afbeelding",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_60a582a0fde46",
+                        "operator": "==",
+                        "value": "afbeelding"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-dienst-flexible.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-chatbots.php"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "11"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "22"
+            }
+        ]
+    ],
+    "menu_order": 3,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1622744519
+}

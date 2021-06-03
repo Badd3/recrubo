@@ -36,6 +36,20 @@
       word-break: break-all;
       margin-top: 0;
       margin-bottom: 15px;
+
+      &.desktop {
+        display: none;
+
+        @include breakpoint(md){
+          display: block;
+        }
+      }
+      &.mobile {
+        display: block;
+        @include breakpoint(md){
+          display: none;
+        }
+      }
     }
   //Styling voor Chatbot CTA
     &.chatbot{
@@ -125,6 +139,12 @@
     font-size: 14px;
     font-family: 'Open Sans';
     font-weight: normal;
+    display: none;
+
+    @include breakpoint(md){
+      display: block;
+    }
+
   }
 
 

@@ -1,0 +1,1164 @@
+{
+    "key": "group_607187a1304cc",
+    "title": "Home",
+    "fields": [
+        {
+            "key": "field_60718a1417598",
+            "label": "Hero",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_60718a2117599",
+            "label": "Hero Titel",
+            "name": "hero_titel",
+            "type": "text",
+            "instructions": "Plaats hier de titel die in de hero verschijnt.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Wij ontzorgen uw HR personeel",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_60718a6a1759a",
+            "label": "Hero Subtekst",
+            "name": "hero_subtekst",
+            "type": "text",
+            "instructions": "Plaats hier de tekst die onder de titel verschijnt",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Wij van Recrubo helpen u graag bij het ontzorgen van uw HR personeel, zodat ze meer tijd overhouden!",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_60718aa31759b",
+            "label": "Hero Button Links",
+            "name": "hero_button_links",
+            "type": "text",
+            "instructions": "Plaats de tekst die in de button verschijnt links",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Vraag een demo aan",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_60718b451759e",
+            "label": "Hero Button Links Url",
+            "name": "hero_button_links_url",
+            "type": "text",
+            "instructions": "Noteer hier de url van de button links",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_60718b1b1759c",
+            "label": "Hero Button Rechts",
+            "name": "hero_button_rechts",
+            "type": "text",
+            "instructions": "Plaats de tekst die in de button verschijnt rechts",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Vraag een demo aan",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_60718bb31759f",
+            "label": "Hero Button Rechts Url",
+            "name": "hero_button_rechts_url",
+            "type": "text",
+            "instructions": "Noteer hier de url van de button rechts",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6071d7ae267ca",
+            "label": "Diensten",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_609987f980866",
+            "label": "diensten id",
+            "name": "diensten_id",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6071d7bb267cb",
+            "label": "chatbots",
+            "name": "chatbots",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_6071d7cc267cc",
+                    "label": "Dienst Kolom 1 titel",
+                    "name": "dienst_kolom_1_titel",
+                    "type": "text",
+                    "instructions": "Plaats hier de titel van de dienst in de eerste kolom.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Chatbots",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_6071d814267cd",
+                    "label": "Dienst Kolom 1 subtekst",
+                    "name": "dienst_kolom_1_subtekst",
+                    "type": "textarea",
+                    "instructions": "Plaats hier de subtekst van de kolom. Probeer max 100 tekens te gebruiken.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 4,
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_60a57c435f17e",
+                    "label": "url",
+                    "name": "url",
+                    "type": "text",
+                    "instructions": "Plaats hier het gewenste id waar deze dienst naar moet leiden.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_6071d88a267ce",
+            "label": "automatisering",
+            "name": "automatisering",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_6071d88a267cf",
+                    "label": "Dienst Kolom 2 titel",
+                    "name": "dienst_kolom_2_titel",
+                    "type": "text",
+                    "instructions": "Plaats hier de titel van de dienst in de eerste kolom.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Chatbots",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_6071d88a267d0",
+                    "label": "Dienst Kolom 2 subtekst",
+                    "name": "dienst_kolom_2_subtekst",
+                    "type": "textarea",
+                    "instructions": "Plaats hier de subtekst van de kolom. Probeer max 100 tekens te gebruiken.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 4,
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_60a57ec47cc09",
+                    "label": "url",
+                    "name": "url",
+                    "type": "text",
+                    "instructions": "Plaats hier het gewenste id waar deze dienst naar moet leiden.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_6071d89c267d1",
+            "label": "Platformen",
+            "name": "platformen",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_6071d89c267d2",
+                    "label": "Dienst Kolom 3 titel",
+                    "name": "dienst_kolom_3_titel",
+                    "type": "text",
+                    "instructions": "Plaats hier de titel van de dienst in de eerste kolom.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Chatbots",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_6071d89c267d3",
+                    "label": "Dienst Kolom 3 subtekst",
+                    "name": "dienst_kolom_3_subtekst",
+                    "type": "textarea",
+                    "instructions": "Plaats hier de subtekst van de kolom. Probeer max 100 tekens te gebruiken.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 4,
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_60a57edc7cc0a",
+                    "label": "url",
+                    "name": "url",
+                    "type": "text",
+                    "instructions": "Plaats hier het gewenste id waar deze dienst naar moet leiden.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_6071d8b6267d4",
+            "label": "Marketing",
+            "name": "marketing",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_6071d8b6267d5",
+                    "label": "Dienst Kolom 4 titel",
+                    "name": "dienst_kolom_4_titel",
+                    "type": "text",
+                    "instructions": "Plaats hier de titel van de dienst in de eerste kolom.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Chatbots",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_6071d8b6267d6",
+                    "label": "Dienst Kolom 4 subtekst",
+                    "name": "dienst_kolom_4_subtekst",
+                    "type": "textarea",
+                    "instructions": "Plaats hier de subtekst van de kolom. Probeer max 100 tekens te gebruiken.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 4,
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_60a57ee67cc0b",
+                    "label": "url",
+                    "name": "url",
+                    "type": "text",
+                    "instructions": "Plaats hier het gewenste id waar deze dienst naar moet leiden.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_6071f9c1b509a",
+            "label": "CTA Chatbots",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_6099885880867",
+            "label": "chatbot_id",
+            "name": "chatbot_id",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6071fad7b509b",
+            "label": "CTA Chatbots Titel",
+            "name": "cta_chatbots_titel",
+            "type": "text",
+            "instructions": "Plaats hier de titel van het CTA blok",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Chatbots voor HR en Recruitment",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6071fb1bb509c",
+            "label": "CTA Chatbots Subtekst",
+            "name": "cta_chatbots_subtekst",
+            "type": "textarea",
+            "instructions": "Plaats hier de subtekst die na de titel verschijnt in het CTA blok",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_6071fbc22d83d",
+            "label": "CTA Chatbots Knoptekst",
+            "name": "cta_chatbots_knoptekst",
+            "type": "text",
+            "instructions": "Plaats hier de tekst die in de knop verschijnt.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Ontdek meer",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6071fb46b509d",
+            "label": "CTA Chatbots Knop URL",
+            "name": "cta_chatbots_knop_url",
+            "type": "link",
+            "instructions": "Kies hier de pagina\/link waar deze knop naar toe moet leiden",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url"
+        },
+        {
+            "key": "field_607c798b32f04",
+            "label": "CTA chatbots img",
+            "name": "cta_chatbots_img",
+            "type": "image",
+            "instructions": "Plaats hier een afbeelding. Deze komt aan de rechterkant te staan.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_6071fea58d9bf",
+            "label": "CTA Automatisering",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_6099888880868",
+            "label": "automatisering id",
+            "name": "automatisering_id",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6071fea88d9c0",
+            "label": "CTA Automatisering Titel",
+            "name": "cta_automatisering_titel",
+            "type": "text",
+            "instructions": "Plaats hier de titel van het CTA blok",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Chatbots voor HR en Recruitment",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6071feaa8d9c1",
+            "label": "CTA Automatisering Subtekst",
+            "name": "cta_automatisering_subtekst",
+            "type": "textarea",
+            "instructions": "Plaats hier de subtekst die na de titel verschijnt in het CTA blok",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_6071fead8d9c2",
+            "label": "CTA Automatisering Knoptekst",
+            "name": "cta_automatisering_knoptekst",
+            "type": "text",
+            "instructions": "Plaats hier de tekst die in de knop verschijnt.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Ontdek meer",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6071feaf8d9c3",
+            "label": "CTA Automatisering Knop URL",
+            "name": "cta_automatisering_knop_url",
+            "type": "link",
+            "instructions": "Kies hier de pagina\/link waar deze knop naar toe moet leiden",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url"
+        },
+        {
+            "key": "field_607c79cc46dac",
+            "label": "CTA automatisering img",
+            "name": "cta_automatisering_img",
+            "type": "image",
+            "instructions": "Plaats hier een afbeelding. Deze komt aan de linkerkant te staan.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_6071ff048d9c4",
+            "label": "CTA Platformen",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_609988c280869",
+            "label": "platformen id",
+            "name": "platformen_id",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6071ff0c8d9c6",
+            "label": "CTA Platformen Titel",
+            "name": "cta_platformen_titel",
+            "type": "text",
+            "instructions": "Plaats hier de titel van het CTA blok",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Chatbots voor HR en Recruitment",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6071ff128d9c7",
+            "label": "CTA Platformen Subtekst",
+            "name": "cta_platformen_subtekst",
+            "type": "textarea",
+            "instructions": "Plaats hier de subtekst die na de titel verschijnt in het CTA blok",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_6071ff198d9c8",
+            "label": "CTA Platformen Knoptekst",
+            "name": "cta_platformen_knoptekst",
+            "type": "text",
+            "instructions": "Plaats hier de tekst die in de knop verschijnt.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Ontdek meer",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6071ff1e8d9c9",
+            "label": "CTA Platformen Knop URL",
+            "name": "cta_platformen_knop_url",
+            "type": "link",
+            "instructions": "Kies hier de pagina\/link waar deze knop naar toe moet leiden",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url"
+        },
+        {
+            "key": "field_607c79e346dad",
+            "label": "CTA platformen img",
+            "name": "cta_platformen_img",
+            "type": "image",
+            "instructions": "Plaats hier een afbeelding. Deze komt aan de rechterkant te staan.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_6071ff908d9cb",
+            "label": "CTA Marketing",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_609988e08086a",
+            "label": "marketing id",
+            "name": "marketing_id",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6071ff958d9cc",
+            "label": "CTA Marketing Titel",
+            "name": "cta_marketing_titel",
+            "type": "text",
+            "instructions": "Plaats hier de titel van het CTA blok",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Chatbots voor HR en Recruitment",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6071ff998d9cd",
+            "label": "CTA Marketing Subtekst",
+            "name": "cta_marketing_subtekst",
+            "type": "textarea",
+            "instructions": "Plaats hier de subtekst die na de titel verschijnt in het CTA blok",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_6071ff9f8d9ce",
+            "label": "CTA Marketing Knoptekst",
+            "name": "cta_marketing_knoptekst",
+            "type": "text",
+            "instructions": "Plaats hier de tekst die in de knop verschijnt.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Ontdek meer",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6071ffa68d9cf",
+            "label": "CTA Marketing Knop URL",
+            "name": "cta_marketing_knop_url",
+            "type": "link",
+            "instructions": "Kies hier de pagina\/link waar deze knop naar toe moet leiden",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url"
+        },
+        {
+            "key": "field_607c79fc46dae",
+            "label": "CTA marketing img",
+            "name": "cta_marketing_img",
+            "type": "image",
+            "instructions": "Plaats hier een afbeelding. Deze komt aan de linkerkant te staan.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_60720318ebefa",
+            "label": "Testimonial Slider",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_60720323ebefb",
+            "label": "Testimonial",
+            "name": "testimonial",
+            "type": "repeater",
+            "instructions": "Plaats hier zoveel testimonials als gewenst. Deze zullen automatisch zichtbaar worden in de slider op de homepage.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "row",
+            "button_label": "Voeg testimonial toe",
+            "sub_fields": [
+                {
+                    "key": "field_60720332ebefc",
+                    "label": "Afbeelding",
+                    "name": "afbeelding",
+                    "type": "image",
+                    "instructions": "Plaats hier een 'headshot' van de desbetreffende persoon. 50 x 50px voor optimaal resultaat.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_6072038cebefd",
+                    "label": "Naam",
+                    "name": "naam",
+                    "type": "text",
+                    "instructions": "Plaats hier de naam van de desbetreffende persoon",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_607203a5ebefe",
+                    "label": "Functie",
+                    "name": "functie",
+                    "type": "text",
+                    "instructions": "Plaats hier de functie van de desbetreffende persoon.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_607203f0ebeff",
+                    "label": "Quote",
+                    "name": "quote",
+                    "type": "text",
+                    "instructions": "Plaats hier een quote.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "LTO to the moon",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_60720c67658bc",
+            "label": "Pre Footer CTA",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_60a58361a7af9",
+            "label": "pre footer cta clone",
+            "name": "pre_footer_cta_clone",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_6094362bc3b51"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "7"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1622744507
+}

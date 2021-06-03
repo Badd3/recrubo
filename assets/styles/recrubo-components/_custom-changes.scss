@@ -1,0 +1,12 @@
+// HIERIN PLAATSEN WE DE CUSTOM WIJZIGINGEN/OVERRIDES OP STANDAARD COMPONENTEN
+
+section#hr-bot{
+ @include breakpoint(md){
+  padding: 50px 100px 0 0;
+ }
+.recrubo-block__img{
+    @include breakpoint(md){
+      align-self: flex-end;
+    }
+  }
+}

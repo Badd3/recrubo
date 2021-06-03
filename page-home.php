@@ -11,7 +11,7 @@
                 <p><?php the_field('hero_subtekst'); ?></p>
                 <div class="hero-cta">
                     <a class="button primary shadow" href="<?php the_field('hero_button_links_url'); ?>"><?php the_field('hero_button_links'); ?></a>
-                    <a class="button secondary" href="<?php the_field('hero_button_rechts_url'); ?>"><?php the_field('hero_button_rechts'); ?></a>
+                    <a class="button secondary black" href="<?php the_field('hero_button_rechts_url'); ?>"><?php the_field('hero_button_rechts'); ?></a>
                 </div>
             </div>
 
@@ -61,7 +61,8 @@
                         </svg>
 
                     </div>
-                    <h3><?php echo $automatisering['dienst_kolom_2_titel']; ?></h3>
+                    <h3 class="desktop"><?php echo $automatisering['dienst_kolom_2_titel']; ?></h3>
+                    <h3 class="mobile">RPA</h3>
                     <span><?php echo $automatisering['dienst_kolom_2_subtekst']; ?></span>
                 </a>
             </div>

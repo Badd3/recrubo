@@ -1,11 +1,9 @@
 <?php get_header(); ?>
 
-<main class="main">
-    <header class="page-header">
-        <h1 class="page-title">
-            <?php _e('Sorry, but the page you were trying to view does not exist.', 'blujay'); ?>
-        </h1>
-    </header>
-</main>
+<div class="container error-page">
 
+    <h1 style="text-align: center;">Oeiiii.... Deze pagina bestaat niet.</h1>
+    <a href="<?php echo site_url(); ?>"><p style="text-align: center;">Terug naar home</p></a>
+
+</div>
 <?php get_footer(); ?>

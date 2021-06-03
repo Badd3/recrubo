@@ -1,0 +1,209 @@
+{
+    "key": "group_6091bff4db3e0",
+    "title": "HERO",
+    "fields": [
+        {
+            "key": "field_6091bff4dddbb",
+            "label": "Template Kleur",
+            "name": "template_kleur",
+            "type": "radio",
+            "instructions": "Selecteer hier de kleur van de dienst template.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "blauw": "blauw",
+                "roze": "roze",
+                "oranje": "oranje",
+                "groen": "groen"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "blauw",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_6091bff4dddcc",
+            "label": "Hero Titel",
+            "name": "hero_titel",
+            "type": "text",
+            "instructions": "Plaats hier de titel die in de hero verschijnt.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Wij ontzorgen uw HR personeel",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6091bff4dddd1",
+            "label": "Hero Subtekst",
+            "name": "hero_subtekst",
+            "type": "text",
+            "instructions": "Plaats hier de tekst die onder de titel verschijnt",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Wij van Recrubo helpen u graag bij het ontzorgen van uw HR personeel, zodat ze meer tijd overhouden!",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6091bff4dddd6",
+            "label": "Hero Button Links",
+            "name": "hero_button_links",
+            "type": "text",
+            "instructions": "Plaats de tekst die in de button verschijnt links",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Vraag een demo aan",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6091bff4ddddc",
+            "label": "Hero Button Links Url",
+            "name": "hero_button_links_url",
+            "type": "text",
+            "instructions": "Noteer hier de url van de button links of gebruik een anchor link",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6091bff4ddde1",
+            "label": "Hero Button Rechts",
+            "name": "hero_button_rechts",
+            "type": "text",
+            "instructions": "Plaats de tekst die in de button verschijnt rechts",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Vraag een demo aan",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6091bff4ddde7",
+            "label": "Hero Button Rechts Url",
+            "name": "hero_button_rechts_url",
+            "type": "text",
+            "instructions": "Noteer hier de url van de button rechts",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_60ad704bd8065",
+            "label": "hero afbeelding",
+            "name": "hero_afbeelding",
+            "type": "image",
+            "instructions": "Max 800px",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": 801,
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-dienst-flexible.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-chatbots.php"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "22"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "11"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1622744511
+}
