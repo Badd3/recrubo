@@ -30,7 +30,7 @@ $template_color = get_field('template_kleur');
 
     <section class="hero chatbots">
         <div class="background <?php echo $general_bg_color; ?>"></div>
-        <div class="hero-left <?php echo $general_bg_color; ?>">
+        <div class="animation animation-fade-in hero-left <?php echo $general_bg_color; ?>">
             <h1><?php the_field('hero_titel'); ?></h1>
             <p><?php the_field('hero_subtekst'); ?></p>
             <div class="hero-cta">

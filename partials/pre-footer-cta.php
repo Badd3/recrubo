@@ -27,8 +27,8 @@ if( get_field('cta_aan') ) {
         <section class="recrubo-cta <?php echo $bg_class; ?> text-center">
         <!-- <div data-aos="dots-animation" class="background-dots aos-init"></div> -->
             <div class="container">
-                <h2  data-aos="fade-left" class="white"><?php echo the_field('cta_blok_titel'); ?></h2>
-                <a  data-aos="fade-right" href="<?php echo the_field('cta_button_url'); ?>" class="button <?php echo $button_color; ?> bg-white"><?php echo the_field('cta_button_tekst'); ?></a>
+                <h2  class="animation animation-fade-in-left trans-del-400 white"><?php echo the_field('cta_blok_titel'); ?></h2>
+                <a href="<?php echo the_field('cta_button_url'); ?>" class="animation animation-fade-in-right trans-del-400 white button <?php echo $button_color; ?> bg-white"><?php echo the_field('cta_button_tekst'); ?></a>
             </div>
         </section>
     <?php }; ?>

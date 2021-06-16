@@ -29,7 +29,7 @@ $template_color = get_field('template_kleur');
 
     <section class="hero dienst align-center d-flex">
         <div class="background <?php echo $general_bg_color; ?>"></div>
-        <div class="hero-left">
+        <div class="hero-left animation animation-fade-in trans-del-200">
             <h1><?php the_field('hero_titel'); ?></h1>
             <p><?php the_field('hero_subtekst'); ?></p>
             <div class="hero-cta">
@@ -38,7 +38,7 @@ $template_color = get_field('template_kleur');
             </div>
         </div>
 
-        <div class="image-wrapper">
+        <div class="image-wrapper animation animation-fade-in-right">
             <img src="<?php the_field('hero_afbeelding'); ?>" alt="" srcset="">
         </div>
     </section>

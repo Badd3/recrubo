@@ -1,0 +1,133 @@
+.animation {
+
+  &.animation-fade-in {
+    position: relative;
+    // top: 20px;
+    transform: translateY(20px);
+    -webkit-transition: opacity .5s ease-out,transform .3s ease-out;
+    transition: opacity .5s ease-out,transform .3s ease-out;
+    opacity: 0;
+    // z-index: 10;
+
+    &.animation-active {
+      transform: translateY(0);
+      opacity: 1;
+
+      //Deze is alleen voor homepage client slider!!
+      &.under-hero {
+        transition-delay: .4s;
+      }
+    }
+  }
+  &.animation-fade-in-left {
+    position: relative;
+    transform: translateX(-20px);
+    -webkit-transition: opacity .5s ease-out,transform .3s ease-out;
+    transition: opacity .5s ease-out,transform .3s ease-out;
+    opacity: 0;
+
+    &.animation-active {
+      transform: translateY(0);
+      opacity: 1;
+
+      //Deze is alleen voor homepage client slider!!
+      &.under-hero {
+        transition-delay: .4s;
+      }
+    }
+  }
+  &.animation-fade-in-right {
+    position: relative;
+    transform: translateX(20px);
+    -webkit-transition: opacity .5s ease-out,transform .3s ease-out;
+    transition: opacity .5s ease-out,transform .3s ease-out;
+    opacity: 0;
+
+    &.animation-active {
+      transform: translateY(0);
+      opacity: 1;
+
+      //Deze is alleen voor homepage client slider!!
+      &.under-hero {
+        transition-delay: .4s;
+      }
+    }
+  }
+}
+
+.animation {
+
+  &.animation-image-fade-in {
+    position: relative;
+    // top: 20px;
+    transform: translateY(20px);
+    -webkit-transition: opacity .5s ease-out,transform .3s ease-out;
+    transition: opacity .5s ease-out,transform .3s ease-out;
+    opacity: 0;
+
+    &:after {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      -webkit-transition: width .5s ease-out;
+      transition: width .5s ease-out;
+      z-index: 50;
+      background-color: #fff;
+      width: 100%;
+      content: "";
+      -webkit-transition-delay: .2s;
+      transition-delay: .2s;
+    }
+    &.animation-active {
+      transform: translateY(0);
+      opacity: 1;
+
+      &:after {
+        width: 0;
+      }
+    }
+  }
+}
+
+.animation {
+&.trans-del-100 {
+  transition-delay: .1s;
+}
+&.trans-del-200 {
+  transition-delay: .2s;
+}
+&.trans-del-300 {
+  transition-delay: .3s;
+}
+&.trans-del-400 {
+  transition-delay: .4s;
+}
+&.trans-del-500 {
+  transition-delay: .5s;
+}
+&.trans-del-600 {
+  transition-delay: .6s;
+}
+&.trans-del-700 {
+  transition-delay: .7s;
+}
+&.trans-del-800 {
+  transition-delay: .8s;
+}
+&.trans-del-900 {
+  transition-delay: .9s;
+}
+
+}
+
+
+
+
+
+
+
+
+
+

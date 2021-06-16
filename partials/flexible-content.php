@@ -27,16 +27,16 @@
 
                         if($state):
                             $accordion_class = "even";
-                            $fade_option = "fade-left";
+                            $fade_option = "animation-fade-in-right";
 
                         else:
                             $accordion_class = "uneven";
-                            $fade_option = "fade-right";
+                            $fade_option = "animation-fade-in-left";
                         endif;
 
                             // Load sub field value.
                             ?>
-                            <div  data-aos="<?php echo $fade_option; ?>" class="accordion-wrapper shadow <?php echo $accordion_class; ?>">
+                            <div class="animation <?php echo $fade_option; ?> trans-del-300 accordion-wrapper shadow <?php echo $accordion_class; ?>">
                                     <div class="circle-plus closed <?php echo $general_bg_color; ?>">
                                         <div class="circle">
                                             <div class="horizontal <?php echo $general_button_color; ?>"></div>
@@ -65,13 +65,13 @@
 
                 elseif( get_row_layout() == 'recrubo_block' ): ?>
                     <section id="<?php the_sub_field('sectie_id'); ?>" class="recrubo-block__flexible <?php echo $general_bg_color; if(get_sub_field('positie_afbeelding') == 'links'): echo ' reverse'; endif; ?>">
-                        <div class="recrubo-block__inner">
+                        <div class="recrubo-block__inner animation animation-fade-in trans-del-400">
                             <h2><?php the_sub_field('blok_titel'); ?></h2>
                             <p><?php the_sub_field('blok_subtekst'); ?></p>
                             <a class="button bg-white shadow <?php echo $general_button_color; ?>" href="<?php the_sub_field('blok_button_links_url'); ?>"><?php the_sub_field('blok_button_links'); ?></a>
                             <a class="button black" href="<?php the_sub_field('blok_button_rechts_url'); ?>"><?php the_sub_field('blok_button_rechts'); ?></a>
                         </div>
-                        <div  class="recrubo-block__img">
+                        <div  class="recrubo-block__img animation animation-fade-in trans-del-200">
                             <img data-aos="fade-up" src="<?php the_sub_field('blok_afbeelding'); ?>" alt="" srcset="">
                         </div>
                     </section>
@@ -101,7 +101,7 @@
                                  // Loop through rows.
                                 while( have_rows('usp_repeater') ) : the_row();
                                 ?>
-                                    <div data-aos="fade-up" data-aos-delay="600" class="usp-block d-flex row-nowrap align-center">
+                                    <div class="usp-block d-flex row-nowrap align-center animation animation-fade-in trans-del-400">
                                         <div class="usp-icon shadow">
                                             <img src="<?php the_sub_field('icon'); ?>" alt="" srcset="">
                                         </div>
@@ -129,12 +129,12 @@
                             </div>
                         </div>
                         <?php if(get_sub_field('afbeelding_of_video') == 'afbeelding'){ ?>
-                            <div data-aos="fade-up" class="img__wrapper">
+                            <div class="img__wrapper animation animation-fade-in trans-del-400">
                                 <img src="<?php the_sub_field('afbeelding'); ?>" alt="" srcset="">
                             </div>
                        <?php } ?>
                         <?php if(get_sub_field('afbeelding_of_video') == 'video'){ ?>
-                            <div data-aos="fade-up" class="video__wrapper">
+                            <div class="video__wrapper animation animation-fade-in trans-del-400">
                                 <?php the_sub_field('video'); ?>
                             </div>
                        <?php } ?>
@@ -142,10 +142,10 @@
                 <?php elseif( get_row_layout() == 'quote_block' ): ?>
                     <section id="<?php the_sub_field('sectie_id'); ?>" class="recrubo-quote__block <?php if(get_sub_field('spiegelen') == true): echo ' reverse'; endif; ?>">
                         <div class="background <?php echo $general_bg_color; ?>"></div>
-                        <div class="content">
+                        <div class="content animation animation-fade-in">
                             <?php the_sub_field('tekst'); ?>
                         </div>
-                        <div data-aos="<?php if(get_sub_field('spiegelen') == true){ echo 'fade-right';} else {echo 'fade-left';}; ?>" class="image">
+                        <div class="image animation trans-del-200 <?php if(get_sub_field('spiegelen') == true){ echo 'animation-fade-in-left';} else {echo 'animation-fade-in-right';}; ?>">
                             <img src="<?php the_sub_field('afbeelding'); ?>" alt="">
                         </div>
                     </section>

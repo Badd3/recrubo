@@ -86,7 +86,7 @@
   justify-content: space-between;
   align-items: center;
   flex-flow: column;
-
+  margin-bottom: 50px;
   @include breakpoint(sm) {
     flex-flow: row nowrap;
   }

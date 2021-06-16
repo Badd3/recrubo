@@ -3,7 +3,7 @@
     <?php if(is_front_page()) {
         $under_hero = 'under-hero';
     } ?>
-    <section data-aos="fade-up" class="clients <?php echo $under_hero; ?>">
+    <section  class="clients animation animation-fade-in <?php echo $under_hero; ?>">
         <div class="container">
             <div class="client-slider">
                 <!-- Slider main container -->

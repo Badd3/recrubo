@@ -46,15 +46,15 @@
     text-align: left;
     flex: 0 1 45%;
 
-    h2 {
-      font-size: 18px;
-      @include breakpoint(md){
-        font-size: 38px;
-      }
-      @include breakpoint(lg){
-        font-size: 50px;
-      }
-    }
+    // h2 {
+    //   font-size: 18px;
+    //   @include breakpoint(md){
+    //     font-size: 38px;
+    //   }
+    //   @include breakpoint(lg){
+    //     font-size: 50px;
+    //   }
+    // }
   }
 
   .image{

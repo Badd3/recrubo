@@ -6,7 +6,7 @@
     <div class="background bg-light-blue"></div>
         <div class="hero-left recrubo-block__inner">
         <!-- <div class="background bg-light-blue"></div> -->
-            <div class="hero-left__wrapper">
+            <div class="hero-left__wrapper animation animation-fade-in">
                 <h1><?php the_field('hero_titel'); ?></h1>
                 <p><?php the_field('hero_subtekst'); ?></p>
                 <div class="hero-cta">
@@ -33,7 +33,7 @@
             <?php
             $chatbots = get_field('chatbots');
             ?>
-            <div data-aos-delay="50" data-aos="fade-up" class="column chatbot">
+            <div class="column chatbot animation animation-fade-in">
                 <a href="<?php echo $chatbots['url']; ?>">
                     <div class="icon">
                         <!-- <img src="<?php THEMEDIR; ?>/wp-content/themes/recrubo/dist/images/chat.svg" alt="" srcset=""> -->
@@ -51,7 +51,7 @@
             <?php
             $automatisering = get_field('automatisering');
             ?>
-            <div data-aos-delay="100" data-aos="fade-up" class="column automatisering">
+            <div class="column automatisering animation animation-fade-in trans-del-200">
                 <a href="<?php echo $automatisering['url']; ?>">
                     <div class="icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="38" height="36" viewBox="0 0 38 36">
@@ -69,7 +69,7 @@
             <?php
                 $plaformen = get_field('platformen')
             ?>
-            <div data-aos-delay="150" data-aos="fade-up" class="column platformen">
+            <div class="column platformen animation animation-fade-in trans-del-400">
                 <a href="<?php echo $plaformen['url']; ?>">
                     <div class="icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="34" height="36" viewBox="0 0 34 36">
@@ -85,7 +85,7 @@
             <?php
                 $marketing = get_field('marketing')
             ?>
-            <div data-aos-delay="200" data-aos="fade-up" class="column marketing">
+            <div class="column marketing animation animation-fade-in trans-del-600">
                 <a href="<?php echo $marketing['url']; ?>">
                     <div class="icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="23" height="36" viewBox="0 0 23 36">
@@ -102,51 +102,51 @@
         </div>
     </section>
 
-    <section data-aos="fade-up" id="<?php the_field('chatbot_id'); ?>" class="recrubo-block chatbot d-flex row-nowrap align-center">
+    <section id="<?php the_field('chatbot_id'); ?>" class="recrubo-block chatbot d-flex row-nowrap align-center">
         <div class="background bg-light-blue"></div>
-            <div class="recrubo-block__inner">
+            <div class="recrubo-block__inner animation animation-fade-in trans-del-400">
                 <h2><?php the_field('cta_chatbots_titel'); ?></h2>
                 <p><?php the_field('cta_chatbots_subtekst'); ?></p>
                 <a class="button bg-white shadow blue" href="<?php the_field('cta_chatbots_knop_url'); ?>"><?php the_field('cta_chatbots_knoptekst'); ?></a>
             </div>
-            <div class="recrubo-block__img">
-                <img data-aos="fade-left" src="<?php the_field('cta_chatbots_img'); ?>" alt="" srcset="">
+            <div class="recrubo-block__img animation animation-fade-in-right trans-del-400">
+                <img src="<?php the_field('cta_chatbots_img'); ?>" alt="" srcset="">
             </div>
     </section>
 
-    <section data-aos="fade-up" id="<?php the_field('automatisering_id'); ?>" class="recrubo-block automatisering d-flex row-reverse-nowrap align-center">
+    <section id="<?php the_field('automatisering_id'); ?>" class="recrubo-block automatisering d-flex row-reverse-nowrap align-center">
     <div class="background bg-light-green"></div>
-        <div class="recrubo-block__inner">
+        <div class="recrubo-block__inner animation animation-fade-in trans-del-400">
             <h2><?php the_field('cta_automatisering_titel'); ?></h2>
             <p><?php the_field('cta_automatisering_subtekst'); ?></p>
             <a class="button bg-white shadow green" href="<?php the_field('cta_automatisering_knop_url'); ?>"><?php the_field('cta_automatisering_knoptekst'); ?></a>
         </div>
-        <div class="recrubo-block__img">
-            <img data-aos="fade-right" src="<?php the_field('cta_automatisering_img'); ?>" alt="" srcset="">
+        <div class="animation animation-fade-in-left trans-del-400 animation recrubo-block__img">
+            <img class="" src="<?php the_field('cta_automatisering_img'); ?>" alt="" srcset="">
         </div>
     </section>
 
-    <section data-aos="fade-up" id="<?php the_field('platformen_id'); ?>" class="recrubo-block platformen d-flex row-nowrap align-center">
+    <section id="<?php the_field('platformen_id'); ?>" class="recrubo-block platformen d-flex row-nowrap align-center">
     <div class="background bg-light-orange"></div>
-        <div class="recrubo-block__inner">
+        <div class="recrubo-block__inner animation animation-fade-in trans-del-400">
             <h2><?php the_field('cta_platformen_titel'); ?></h2>
             <p><?php the_field('cta_platformen_subtekst'); ?></p>
             <a class="button bg-white shadow orange" href="<?php the_field('cta_platformen_knop_url'); ?>"><?php the_field('cta_platformen_knoptekst'); ?></a>
         </div>
-        <div class="recrubo-block__img">
-            <img data-aos="fade-left" src="<?php the_field('cta_platformen_img'); ?>" alt="" srcset="">
+        <div class="animation animation-fade-in-right trans-del-400 recrubo-block__img">
+            <img src="<?php the_field('cta_platformen_img'); ?>" alt="" srcset="">
         </div>
     </section>
 
-    <section data-aos="fade-up" id="<?php the_field('marketing_id'); ?>" class="recrubo-block marketing d-flex row-reverse-nowrap align-center">
+    <section id="<?php the_field('marketing_id'); ?>" class="recrubo-block marketing d-flex row-reverse-nowrap align-center">
     <div class="background bg-light-pink"></div>
-        <div class="recrubo-block__inner">
+        <div class="recrubo-block__inner animation animation-fade-in trans-del-400">
             <h2><?php the_field('cta_marketing_titel'); ?></h2>
             <p><?php the_field('cta_marketing_subtekst'); ?></p>
             <a class="button bg-white shadow pink" href="<?php the_field('cta_marketing_knop_url'); ?>"><?php the_field('cta_marketing_knoptekst'); ?></a>
         </div>
-        <div class="recrubo-block__img">
-            <img data-aos="fade-right" src="<?php the_field('cta_marketing_img'); ?>" alt="" srcset="">
+        <div class="animation animation-fade-in-left trans-del-400 recrubo-block__img">
+            <img src="<?php the_field('cta_marketing_img'); ?>" alt="" srcset="">
         </div>
     </section>
 

@@ -137,3 +137,30 @@ for (i = 0; i < acc.length; i++) {
     this.classList.toggle("active");
   });
 }
+
+// Observeert wanneer .animate in het scherm komt en voegt de class .animate-observe toe.
+function observeAnimate(){
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      // if (entry.intersectionRatio > 0) {
+      if (entry.isIntersecting ) {
+        entry.target.classList.add('animation-active');
+        // entry.target.classList.add('animation-active');
+      }
+
+    }
+  )});
+
+  const boxElList = document.querySelectorAll('.animation');
+  // const customAnimation = document.querySelectorAll('.custom-animation');
+  boxElList.forEach((el) => {
+    io.observe(el);
+    })
+  // customAnimation.forEach((el) => {
+  //   io.observe(el);
+  //   })
+
+    // console.log('running observe animate');
+}
+
+observeAnimate();
